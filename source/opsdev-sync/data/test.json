@@ -1,0 +1,37 @@
+{
+	source :{
+		url:'jdbc:mysql://localhost:3306/icmdb?useUnicode=true&characterEncoding=utf-8&autoReconnect=true',
+		user:'root',
+		password:'alvin',
+		driver:'com.mysql.jdbc.Driver'
+	},
+	target : {
+		url:'jdbc:mysql://localhost:3306/icenter?useUnicode=true&characterEncoding=utf-8&autoReconnect=true',
+		user:'root',
+		password:'alvin',
+		driver:'com.mysql.jdbc.Driver'
+	},
+	sync : [
+		{
+			name: 'user',
+			cols: [
+				{
+					table:'device',
+					source:'id',
+					target:'id',
+					key:true
+				},
+				{
+					table:'device',
+					source:'inner_server',
+					target:'password'
+				},
+				{
+					table:'device',
+					source:'out_server',
+					target:'user'
+				}
+			]
+		}
+	]
+}
