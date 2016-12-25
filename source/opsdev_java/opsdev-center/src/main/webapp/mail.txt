@@ -1,0 +1,36 @@
+ public void sendMail(MailConfig mailConfig, String title, String content) throws Exception {
+        HtmlEmail mail = new HtmlEmail();
+        mail.setCharset("utf-8");
+        mail.setAuthentication(mailConfig.getSendUserName(), mailConfig.getSendUserPassword());
+        mail.setFrom(mailConfig.getFromUser());
+        mail.setHostName(mailConfig.getHost());
+        for (String to : mailConfig.getToUsers()) {
+            mail.addTo(to);
+        }
+        mail.setSubject(title);
+        mail.setHtmlMsg(content);
+        mail.send();
+    }
+
+   private MailConfig createMailConfig() {
+        MailConfig config = new MailConfig();
+        config.setAuth(true);
+        config.setFromUser(fromUser);
+        config.setHost(host);
+        String userName = fromUser.substring(0, fromUser.indexOf("@"));
+        config.setSendUserName(userName);
+        config.setSendUserPassword(password);
+        config.setSslEnabled(true);
+        config.setToUsers(getToUsers());
+        return config;
+    }
+
+
+  @Value("${mail.send.to.user}")
+    private String toUser;
+    @Value("${mail.send.user}")
+    private String fromUser;
+    @Value("${mail.smtp.host}")
+    private String host;
+    @Value("${mail.send.password}")
+    private String password;
