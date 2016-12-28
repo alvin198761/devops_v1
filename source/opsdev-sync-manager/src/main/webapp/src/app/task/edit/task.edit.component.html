@@ -1,0 +1,28 @@
+<div>
+  <form class="form-horizontal" role="form">
+    <div class="form-group">
+      <label  class="col-sm-2 control-label"><b>ID:</b></label>
+      <div class="col-sm-10 control-label" style="text-align: left" >{{task.id}}</div>
+    </div>
+    <div class="form-group">
+      <label  class="col-sm-2 control-label"><b>Name:</b></label>
+      <div class="col-sm-10 control-label" style="text-align: left">{{task.name}}</div>
+    </div>
+    <div class="form-group">
+      <label  class="col-sm-2 control-label"><b>Time:</b></label>
+      <div class="col-sm-10 control-label" style="text-align: left">{{task.time}}</div>
+    </div>
+    <div class="form-group">
+      <label  for="remarkText" class="col-sm-2 control-label"><b>Remark:</b></label>
+      <div class="col-sm-10 control-label" style="text-align: left">
+        <textarea id="remarkText" class="form-control" placeholder="请输入备注信息">{{task.remark}}</textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button  (click)="doModifyRemark()"  class="btn btn-primary">保存</button>
+        &nbsp;|&nbsp;<button  (click)="this.router.navigate(['/task'])"  class="btn">返回</button>
+      </div>
+    </div>
+  </form>
+</div>

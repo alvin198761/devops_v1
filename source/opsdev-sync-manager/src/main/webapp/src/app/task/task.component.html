@@ -1,0 +1,36 @@
+<div>
+  <div class="btn-group">
+    <button type="button" (click)="toAddPage()" class="btn btn-default" title="上传任务文件"><span class="glyphicon glyphicon-plus"></span></button>
+    <div class="input-group" style="width: 250px">
+      <input type="text" class="form-control" (input)="filterTask($event)" [(ngModel)]="filterStr" placeholder="输入名称查找">
+      <span class="input-group-addon">
+            <i class="glyphicon glyphicon-search"></i>
+          </span>
+    </div>
+  </div>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Time</th>
+      <th>Remark</th>
+      <th>Operation</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let t of tasks">
+      <td>{{t.id}}</td>
+      <td>{{t.name}}</td>
+      <td>{{t.time}}</td>
+      <td>{{t.remark}}</td>
+      <td>
+        <a (click)="doEditTask(t.id)" style="cursor: pointer">编辑</a>
+        &nbsp;|&nbsp;
+        <a (click)="doRemoteTask(t.id)" style="cursor: pointer">删除</a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <p-confirmDialog width="425"></p-confirmDialog>
+</div>

@@ -1,0 +1,12 @@
+<div>
+  <p-fileUpload name="file" url="/task/upload" (onUpload)="onUpload($event)"
+                accept="json/*">
+  </p-fileUpload>
+  <div><br/></div>
+  <textarea id="remarkText" class="form-control" placeholder="请输入备注信息">{{task.remark}}</textarea>
+  <div class="row">
+    <br/>
+  </div>
+  <button (click)="addTask()" class="btn btn-primary">添加</button>
+  <button (click)="this.router.navigate(['/task'])" class="btn btn-default">返回</button>
+</div>
