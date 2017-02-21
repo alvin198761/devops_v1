@@ -1,9 +1,6 @@
-import  reqwest from '../utils/reqwest'
+// import  reqwest from '../utils/reqwest'
+import  axios from 'axios';
 
 export function fetchAll() {
-    return reqwest({
-        url: '/room/list',
-        method: 'get',
-        type: 'json'
-    });
+    return axios('/api/room/list');
 }

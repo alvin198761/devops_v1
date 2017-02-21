@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "entry": {
+    "index": "./src/index.js"
+  },
+  "dependencies": {
+    "antd": "^2.2.0",
+    "dva": "^1.1.0",
+    "html-webpack-plugin": "^2.28.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  },
+  "devDependencies": {
+    "atool-build": "^0.7.6",
+    "atool-test-mocha": "^0.1.5",
+    "babel-plugin-dev-expression": "^0.2.1",
+    "babel-plugin-dva-hmr": "^0.1.0",
+    "babel-plugin-import": "^1.0.1",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-runtime": "^6.9.2",
+    "dora": "0.3.x",
+    "dora-plugin-browser-history": "^0.2.0",
+    "dora-plugin-proxy": "^0.7.0",
+    "dora-plugin-webpack": "0.6.x",
+    "dora-plugin-webpack-hmr": "^0.1.0",
+    "expect": "^1.20.2",
+    "react-redux": "^4.4.5",
+    "redbox-react": "^1.2.10",
+    "redux": "^3.6.0",
+    "js-md5": "^0.4.1",
+    "reqwest": "^2.0.5",
+    "g2": "^2.0.1",
+    "g2-react": "^1.0.1",
+    "npm-run-all": "^3.1.2"
+  },
+  "scripts": {
+    "start-index": "dora --plugins \"proxy,webpack,webpack-hmr,browser-history?index=/src/index.html\"",
+    "start-login": "dora --plugins \"proxy,webpack?config=./login-webpack.config.js,webpack-hmr,browser-history?index=/src/login.html\"",
+    "build-index": "atool-build -o ../resources/",
+    "build-login": "atool-build --config ./login-webpack.config.js -o ../resources/",
+    "build-all": "npm-run-all -l -p build-index build-login",
+    "test": "atool-test-mocha ./src/**/*-test.js"
+  }
+}

@@ -1,7 +1,7 @@
 <template>
     <el-dialog title="分发文件任务" v-model="show" :show-close="true" :close-on-click-modal="false"
-               :close-on-press-escape="false" close="$parent.showAdd=false">
-        <el-steps :active="active" :space="210" finish-status="success">
+               :close-on-press-escape="false">
+        <el-steps :active="active" :space="175" finish-status="success">
             <el-step title="常规">
             </el-step>
             <el-step title="选择文件">
@@ -33,7 +33,7 @@
                     <el-row>
                         <el-col :span="24">
                             <el-tree
-                                    :data="data"
+                                    :data="files"
                                     :props="props"
                                     show-checkbox
                                     @check-change="handleCheckChange">
@@ -61,9 +61,10 @@
 </template>
 <script>
     module.exports = {
-        props: ['show'],
+        props: ['addCDNTask'],
         data: function () {
             return {
+                show: false,
                 form: {
                     type: 1,
                     target: ''
@@ -71,40 +72,35 @@
                 rules: {
                     target: [
                         {required: true, message: '请输入目标位置', trigger: 'blur'}
-
                     ]
                 },
                 active: 1,
-                data: [{
-                    label: '一级 1',
-                    children: [{
-                        label: '二级 1-1'
-                    }]
-                }, {
-                    label: '一级 2',
-                    children: [{
-                        label: '二级 2-1'
-                    }, {
-                        label: '二级 2-2'
-                    }]
-                }, {
-                    label: '一级 3',
-                    children: [{
-                        label: '二级 3-1'
-                    }, {
-                        label: '二级 3-2'
-                    }]
-                }],
+                files: [],
+                hosts: [],
                 defaultProps: {
                     children: 'children',
                     label: 'label'
                 }
             };
         },
+        created: function () {
+            this.loadFiles();
+            this.loadHosts();
+        },
         computed: {},
         methods: {
+            loadFiles: function () {
+                this.$http.get('/api/cdn/files').then(res => {
+                    this.files = res.data;
+                });
+            },
+            loadHosts: function () {
+                this.$http.get('/api/cdn/hosts').then(res => {
+                    this.hosts = res.data;
+                });
+            },
             doFormSubmit: function () {
-             this.$refs.form.validate(function (valid) {
+                this.$refs.form.validate(function (valid) {
                     if (!valid) {
                         return;
                     }
@@ -119,17 +115,6 @@
                 if (this.active >= 4) {
                     return;
                 }
-//                console.log("=====")
-//                if(this.active == 1){
-//                    this.$refs.form.validateField('target',function (valid) {
-//                        if (valid !=0) {
-//                            return;
-//                        }
-//                        console.log("------------")
-//                        _this.active += 1;
-//                    })
-//                    return ;
-//                }
                 _this.active += 1;
 
             },
@@ -141,8 +126,10 @@
             },
             handleCheckChange: function (data, checked, indeterminate) {
                 console.log(data, checked, indeterminate)
+            },
+            showDialog: function () {
+                this.show = true;
             }
-
         },
         components: {}
 

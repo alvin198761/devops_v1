@@ -27,4 +27,8 @@ public class FileItemService {
     public Page<FileItem> findAll(Pageable pageable) {
         return this.fileItemRepository.findAll(pageable);
     }
+
+    public FileItem findOne(Long id) {
+        return this.findOne(id);
+    }
 }

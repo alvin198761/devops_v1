@@ -12,15 +12,15 @@
                     </el-form-item>
                 </el-col>
                 <el-col :span="12">
-                    <el-form-item label="名称" prop="file" label-width="80px">
-                        <el-input v-model="form.file" auto-complete="off" placeholder="请输入文件名称" size="small"></el-input>
+                    <el-form-item label="名称" prop="name" label-width="80px">
+                        <el-input v-model="form.name" auto-complete="off" placeholder="请输入文件名称" size="small"></el-input>
                     </el-form-item>
                 </el-col>
             </el-row>
             <el-row>
                 <el-col :span="12" :offset="5">
                     <el-upload
-                            action="/file/upload"
+                            action="/api/file/upload"
                             type="drag"
                             name="upfile"
                             :multiple="false"
@@ -28,8 +28,7 @@
                             :on-remove="handleRemove"
                             :on-success="handleSuccess"
                             :on-error="handleError"
-                            :default-file-list="fileList"
-                    >
+                            :default-file-list="fileList">
                         <i class="el-icon-upload"></i>
                         <div class="el-dragger__text">将文件拖到此处，或<em>点击上传</em></div>
                         <div class="el-upload__tip" slot="tip">不得超过地球的最大容量</div>
@@ -44,18 +43,17 @@
     </el-dialog>
 </template>
 <script>
-    import {addFileItem} from '../../../service/FileService';
-
     module.exports = {
         props: ['show'],
         data: function () {
             return {
                 form: {
                     type: 'FILE',
-                    file: '',
+                    name: '',
+                    path: '',
                 },
                 rules: {
-                    file: [
+                    name: [
                         {required: true, message: '请输入活动名称', trigger: 'blur'},
                         {min: 5, max: 50, message: '长度在 5 到 50 个字符', trigger: 'blur'}
                     ]
@@ -70,14 +68,16 @@
                     if (!valid) {
                         return;
                     }
-                    addFileItem(_this.form).then(res =>{
+                    _this.$http.post('/api/file', {
+                        params: _this.form
+                    }).then(res => {
                         _this.$message({
                             showClose: true,
                             message: '添加文件成功',
                             type: 'success'
                         });
                         _this.$parent.reload();
-                    }).fail(res => {
+                    }).catch(res => {
                         _this.$message({
                             showClose: true,
                             message: '添加文件失败',
@@ -88,11 +88,10 @@
                 })
             },
             handleSuccess: function (response, file, fileList) {
-                this.file = file.name;
+                this.form.name = file.name;
+                this.form.path = response.path;
             }
-        },
-        components: {}
-
+        }
     }
 </script>
 <style>

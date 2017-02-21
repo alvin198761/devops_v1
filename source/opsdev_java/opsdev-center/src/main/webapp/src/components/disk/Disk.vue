@@ -1,6 +1,6 @@
 <template>
-    <el-tabs :active-name="activeName" class="diskTab">
-        <el-tab-pane label="文件管理" name="file"  >
+    <el-tabs :active-name="activeName" class="diskTab" >
+        <el-tab-pane label="文件管理" name="file">
             <Files></Files>
         </el-tab-pane>
         <el-tab-pane label="分发列表" name="distribute"  >
@@ -21,7 +21,8 @@
 
         methods: {},
         components: {
-            Files, Distribute
+            Files,
+            Distribute
         }
 
     }

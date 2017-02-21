@@ -1,0 +1,14 @@
+.logo-card {
+  width: 350px;
+  position: fixed;
+  top: 100px;
+  right: 100px;
+}
+
+.logo-card .login-form-button {
+  width: 100%;
+}
+
+.login-form-forgot{
+  float: right;
+}

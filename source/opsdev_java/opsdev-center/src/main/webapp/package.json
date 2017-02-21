@@ -1,16 +1,23 @@
 {
-  "name": "vueadmin",
+  "name": "opsdev-center",
   "version": "1.0.0",
-  "description": "vue admin project",
-  "author": "taylor <709161610@qq.com>",
+  "description": "opsdev-center",
+  "author": "alvin198761@163.com",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "mock": "puer --no-launch -a proxy.config.js",
+    "start": "npm-run-all -l -p mock dev"
   },
   "dependencies": {
+    "axios": "^0.15.3",
+    "babel-runtime": "^6.20.0",
     "flex.css": "^1.1.6",
+    "mockjs": "^1.0.1-beta3",
+    "npm-run-all": "^4.0.0",
     "nprogress": "^0.2.0",
+    "puer": "^1.1.1",
     "vue": "2.1.4",
     "vuex": "2.0.0-rc.6"
   },
@@ -25,7 +32,7 @@
     "chalk": "^1.1.3",
     "connect-history-api-fallback": "^1.1.0",
     "css-loader": "^0.26.0",
-    "element-ui": "^1.0.2",
+    "element-ui": "1.0.9",
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.13.3",
     "extract-text-webpack-plugin": "^1.0.1",

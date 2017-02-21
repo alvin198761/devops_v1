@@ -1,62 +1,61 @@
 <template>
     <el-row class="content">
-        <div style="width: 98% ;padding-left:10px; ">
-            <el-col :span="8" style="padding-top: 5px">
-                <el-input size="small"
-                          placeholder="根据 Ip 搜索"
-                          icon="search"
-                          v-model="filterStr">
-                </el-input>
-            </el-col>
-            <el-col :span="16" style="padding-top: 5px">
-                <el-button-group>
-                    <el-button size="small" icon="share" title="重新获取列表"></el-button>
-                </el-button-group>
-            </el-col>
-            <el-table
-                    :data="devices"
-                    highlight-current-row
-                    @current-change="handleCurrentChange"
-                    style="width: 100%; ">
-                <el-table-column
-                        type="index"
-                        width="80">
-                </el-table-column>
-                <el-table-column
-                        property="innerIp"
-                        label="内网IP"
-                >
-                </el-table-column>
-                <el-table-column
-                        property="outerIp"
-                        label="外网Ip"
-                >
-                </el-table-column>
-                <el-table-column
-                        property="room"
-                        label="机房">
-                </el-table-column>
-                <el-table-column
-                        property="remark"
-                        label="备注"
-                        width="300"
-                >
-                </el-table-column>
-            </el-table>
-            <el-row>
-                <el-pagination style="float:right"
-                    v-loading="loading"
-                    highlight-current-row
-                    element-loading-text="跟你说，我为了加载，我也是蛮拼的"
-                    layout="prev, pager, next"
-                    @current-change="handleCurrentChange"
-                    :page-size="page.size"
-                    :page-count="page.pageCount"
-                    :current-page="page.number"
-                    :total="page.total">
-                </el-pagination>
-            </el-row>
-        </div>
+        <el-col>
+            <div style="width: 98% ;padding-left:10px; ">
+                <el-col :span="8" style="padding-top: 5px">
+                    <el-input size="small"
+                              placeholder="根据 Ip 搜索"
+                              icon="search"
+                              v-model="filterStr">
+                    </el-input>
+                </el-col>
+                <el-col :span="16" style="padding-top: 5px">
+                    <el-button-group>
+                        <el-button size="small" icon="share" title="重新获取列表"></el-button>
+                    </el-button-group>
+                </el-col>
+                <el-table
+                        :data="devices"
+                        v-loading="loading"
+                        element-loading-text="跟你说，我为了加载，我也是蛮拼的"
+                        highlight-current-row
+                        style="width: 100%; ">
+                    <el-table-column
+                            type="index"
+                            width="80">
+                    </el-table-column>
+                    <el-table-column
+                            property="innerIp"
+                            label="内网IP"
+                    >
+                    </el-table-column>
+                    <el-table-column
+                            property="outerIp"
+                            label="外网Ip"
+                    >
+                    </el-table-column>
+                    <el-table-column
+                            property="room.name"
+                            label="机房">
+                    </el-table-column>
+                    <el-table-column
+                            property="remark"
+                            label="备注"
+                            width="300"
+                    >
+                    </el-table-column>
+                </el-table>
+                <el-row>
+                    <el-pagination style="float:right"
+                                   layout="prev, pager, next"
+                                   @current-change="handleCurrentChange"
+                                   :page-size="page.size"
+                                   :page-count="page.pageCount"
+                                   :current-page="page.number"
+                                   :total="page.total">
+                    </el-pagination>
+                </el-row>
+            </div>
         </el-col>
     </el-row>
 </template>
@@ -86,13 +85,10 @@
             handleNodeClick(){
 
             },
-            handleCurrentChange(row){
-
-            },
             filterData(allData){
                 const datas = [];
                 for (var item in allData) {
-                    if (allData[item].innerIP.indexOf(this.filterStr) != -1 || allData[item].outerIP.indexOf(this.filterStr) != -1 ) {
+                    if (allData[item].innerIp.indexOf(this.filterStr) != -1 || allData[item].outerIp.indexOf(this.filterStr) != -1 ) {
                         datas.push(allData[item])
                     }
                 }
@@ -104,16 +100,18 @@
             reload(page){
                 const _this = this;
                 _this.loading = true;
-                fetchAll(page).then(res => {
-                    _this.allData = res.content;
+               this.$http.get("/api/device/list/"+page).then(res => {
+                    _this.allData = res.data.content;
                     _this.devices = this.filterData(this.allData);
                     _this.page = {
-                        total: res.totalElements,
-                        number: res.number + 1,
-                        size: res.size,
-                        pageCount: res.totalPages
+                        total: res.data.totalElements,
+                        number: _this.page.number,
+                        size: res.data.size,
+                        pageCount: res.data.totalPages
                     }
-                    _this.loading = false;
+                     _this.loading = false;
+                }).catch(res =>{
+                    _this.loading=false;
                 });
             }
         }, watch: {
@@ -122,6 +120,14 @@
             }
         }
     }
+
+
+
+
+
+
+
+
 </script>
 <style>
     .content {
@@ -131,5 +137,13 @@
         width: 98%;
         background: white;
     }
+
+
+
+
+
+
+
+
 
 </style>

@@ -11,7 +11,7 @@ export function addFileItem(params) {
 
 export function fetchAll(page) {
     return reqwest({
-        url:'/file/list',
+        url:'/file',
         method:'get',
         type:'json',
         data:{

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <el-row >
+        <el-row>
             <div style="width: 98% ;padding-left:10px; ">
                 <el-col :span="8" style="padding-top: 5px">
                     <el-input size="small"
@@ -10,16 +10,17 @@
                     </el-input>
                 </el-col>
                 <el-col :span="16" style="padding-top: 5px">
-
                     <el-button-group>
-                        <el-button size="small" @click="showAdd=true" icon="plus" title="添分发任务"></el-button>
+                        <el-button size="small" @click="$refs.dialog.showDialog()" icon="plus"
+                                   title="添分发任务"></el-button>
                         <el-button size="small" icon="minus" title="删除"></el-button>
                     </el-button-group>
                 </el-col>
                 <el-table
                         :data="tasks"
                         highlight-current-row
-                        @current-change="handleCurrentChange"
+                        v-loading="loading"
+                        element-loading-text="为了数据，冲啊"
                         style="width: 100%; ">
                     <el-table-column
                             type="index"
@@ -59,15 +60,21 @@
                             label="操作"
                             inline-template>
                      <span>
-                    <el-button type="text" size="small">取消</el-button>
-                    <el-button type="text" size="small">重试</el-button>
+                    <el-button type="text" size="small" @click="cancelCDN($index,row)">取消</el-button>
+                    <el-button type="text" size="small" @click="retryCDN($index,row)">重试</el-button>
                   </span>
                     </el-table-column>
                 </el-table>
+                <el-row>
+                    <el-pagination style="margin-top:20px;float: right; margin-right: 10px;"
+                                   layout="prev, pager, next"
+                                   :total="page.total" :page-size="page.pageSize" :current-page="page.current">
+                    </el-pagination>
+                </el-row>
             </div>
             </el-col>
         </el-row>
-        <AddFileTaskDialog :show="showAdd"></AddFileTaskDialog>
+        <AddFileTaskDialog ref="dialog"></AddFileTaskDialog>
     </div>
 </template>
 <script>
@@ -75,52 +82,77 @@
     module.exports = {
         data: function () {
             return {
-                tasks: [{
-                    id: 1,
-                    file: '再论时空穿梭.txt',
-                    hosts: '牛逼1，很牛逼2',
-                    target:'/test/nb.txt',
-                    time: '2100-1-1 12:12:12',
-                    user: '赵日天',
-                    ops: '操作',
-                    status:'客观别急'
-                } ],
+                tasks: [],
                 currentRow: null,
+                loading: false,
                 defaultProps: {
                     children: 'children',
                     label: 'label'
                 },
                 filterStr: '',
-                showAdd:false
-
+                showAdd: false,
+                page: {
+                    current: 1,
+                    total: 0,
+                    pageSize: 20
+                }
             };
         },
 
         methods: {
-            handleNodeClick(){
+            reload(){
+                this.loading = true;
+                const _this = this;
+                this.$http.get('/api/cdn/' + (this.page.current - 1)).then(res => {
+                    let data = res.data;
+                    _this.tasks = data.content;
+                    _this.page = {
+                        total: data.totalElements,
+                        current: _this.page.current
+                    }
+                    _this.loading = false;
+                }).catch(res => {
+                    _this.loading = false;
+                });
+            },
+            cancelCDN(index, row){
+                this.$http.get('/api/cdn/cancel/' + row.id).then(res => {
+                    this.$message({
+                        message: '取消成功',
+                        type: 'success'
+                    });
+                    this.reload();
+                }) .catch(res => {
+                    this.$message({
+                        message: '取消失败',
+                        type: 'error'
+                    });
+                })
 
             },
-            handleCurrentChange(row){
-
+            retryCDN(index,row) {
+                this.$http.get('/api/cdn/retry/' + row.id).then(res => {
+                    this.$message({
+                        message: '重试成功',
+                        type: 'success'
+                    });
+                    this.reload();
+                }).catch(res => {
+                    this.$message({
+                        message: '重试失败',
+                        type: 'error'
+                    });
+                });
             }
-
         },
 
         created: function () {
-           // console.log("enter")
+            this.reload();
         },
-        components :{
+        components: {
             AddFileTaskDialog
         }
     }
 </script>
-<style >
-    /*.content {*/
-        /*top: 50px;*/
-        /*bottom: 25px;*/
-        /*position: absolute;*/
-        /*width: 98%;*/
-        /*background: white;*/
-    /*}*/
-
+<style>
 </style>

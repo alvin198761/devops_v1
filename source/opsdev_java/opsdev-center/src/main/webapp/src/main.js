@@ -17,64 +17,71 @@ import Sys from './components/role/sys/Sys.vue'
 import Disk from './components/disk/Disk.vue'
 import NProgress from 'nprogress'//页面顶部进度条
 import TaskCmdDialog from './components/call/task/TaskItem.vue'
+import  axios from 'axios';
 
 Vue.use(ElementUI)
 Vue.use(VueRouter)
 
+Vue.prototype.$http = axios;
 
 const routes = [
-  { path: '/login', component: Login },
-  {
-    path: '/',
-    component: Home,
-    name: '资源管理',
-    children: [
-      { path: '/room', component: Room ,name:'机房管理'},
-     { path: '/project', component: Project, name: '项目管理' },
-     { path: '/device', component: Device, name: '设备管理' },
-    ]
-  },
-  {
-    path: '/',
-    component: Home,
-    name: '文件管理',
-    children: [
-      { path: '/files', component: Disk, name: '文件操作' },
-    ]
-  },
-  {
-    path: '/',
-    component: Home,
-    name: '远程调用',
-    children: [
-     { path: '/cmd', component: Cmd, name: '命令执行' },
-     { path: '/task', component: Task, name: '执行任务' },
-     { path: '/task-item', component: TaskCmdDialog, name: '添加任务项' }
-    ]
-  },
-  {
-    path: '/',
-    component: Home,
-    name: '用户和权限',
-    children: [
-      { path: '/user', component: Control, name: '用户/权限' },
-      { path: '/sys', component: Sys, name: '系统设置' }
-    ]
-  }
+    {path: '/login', component: Login},
+    {
+        path: '/',
+        component: Home,
+        name: '资源管理',
+        children: [
+            {path: '/room', component: Room, name: '机房管理'},
+            {path: '/project', component: Project, name: '项目管理'},
+            {path: '/device', component: Device, name: '设备管理'},
+        ]
+    },
+    {
+        path: '/',
+        component: Home,
+        name: '文件管理',
+        children: [
+            {path: '/files', component: Disk, name: '文件操作'},
+        ]
+    },
+    {
+        path: '/',
+        component: Home,
+        name: '远程调用',
+        children: [
+            {path: '/cmd', component: Cmd, name: '命令执行'},
+            {path: '/task', component: Task, name: '执行任务'},
+            {path: '/task-item', component: TaskCmdDialog, name: '添加任务项'}
+        ]
+    },
+    {
+        path: '/',
+        component: Home,
+        name: '用户和权限',
+        children: [
+            {path: '/user', component: Control, name: '用户/权限'},
+            {path: '/sys', component: Sys, name: '系统设置'}
+        ]
+    }
 ]
 
-const router = new VueRouter({  routes})
+const router = new VueRouter({routes})
 
-router.beforeEach((to, from, next) => {  NProgress.start();  next()})
+router.beforeEach((to, from, next) => {
+    NProgress.start();
+    next()
+})
 
-router.afterEach(transition => {  NProgress.done();});
+router.afterEach(transition => {
+    NProgress.done();
+});
 
 new Vue({
-  el: '#app',
-  template: '<App/>',
-  router,
-  components: { App }
- // render: h => h(Login)
+    el: '#app',
+    template: '<App/>',
+    router,
+    components: {App}
+    // render: h => h(Login)
 }).$mount('#app')
 
 router.replace('/room')
