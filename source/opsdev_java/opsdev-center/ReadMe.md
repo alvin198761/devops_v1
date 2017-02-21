@@ -7,4 +7,4 @@
 由于是第一个vue 项目，照着vueadmin 改的，界面效果一律从那里抄过来的，
 界面图片：
 
-https://github.com/alvin198761/devops_v1/blob/master/source/opsdev_java/opsdev-center/pic/main.png
+![image](https://github.com/alvin198761/devops_v1/blob/master/source/opsdev_java/opsdev-center/pic/main.png)
