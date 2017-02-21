@@ -9,11 +9,10 @@
 
 原来说好帮我做功能的人，因为没有时间，所以我只能先把架子都搭建好，等有空了再做吧 
 
-
-前端截图
-
-![image](https://github.com/alvin198761/alvin_swing/blob/master/phoneDesigner/demo.png)
-
+登录页面截图
+![image](https://github.com/alvin198761/devops_v1/blob/master/source/opsdev-auth/src/main/webapp/pics/login.png)
+主页面截图
+![image](https://github.com/alvin198761/devops_v1/blob/master/source/opsdev-auth/src/main/webapp/pics/main.png)
 问题：
 后端目前注解实现方法权限控制无效，没有解决
 
