@@ -6,16 +6,46 @@
                 style="width: 100%">
         <el-table-column type="expand">
           <template scope="props">
-            <p>图标: {{ props.row.attr.icon }}</p>
+            <div>图标: <i :class="props.row.attr.icon"></i></div>
+            <div>状态: {{ props.row.attr.projectStatus }}</div>
+            <div>描述: {{ props.row.attr.description }}</div>
           </template>
-        </el-table-column>
-        <el-table-column
-          label="编号"
-          prop="project.id">
         </el-table-column>
         <el-table-column
           label="名称"
           prop="project.name">
+        </el-table-column>
+        <el-table-column
+          label="构建方式"
+          >
+          <template scope="scope">
+             <span>
+                 {{scope.row.project.buildType | build-format}}
+             </span>
+          </template>
+        </el-table-column>
+        <el-table-column
+          label="版本控制">
+           <template scope="scope">
+             <span>
+                 {{scope.row.project.versionControl | version-format}}
+             </span>
+          </template>
+        </el-table-column>
+        <el-table-column
+          label="创建人"
+          prop="project.author">
+        </el-table-column>
+        <el-table-column
+          label="操作">
+          <template scope="scope">
+            <el-button
+              @click="setting(scope.$index,scope.row)"
+              type="text"
+              size="small">
+              设置
+            </el-button>
+          </template>
         </el-table-column>
       </el-table>
     </div>
@@ -34,6 +64,7 @@
 </template>
 <script>
   import {mapGetters} from 'vuex'
+  import {buildFormat, versionFormat} from '../../constant';
   export default{
 
     computed: {
@@ -42,19 +73,32 @@
         loading: 'project/_loading',
         page: 'project/_page'
       })
-  }  ,
+  }
+  ,
   created: function () {
-    this.$store.dispatch('project/fetch');
+    let page = this.$route.params.page;
+    if(!page){
+      page = 1;
+    }
+    this.$store.dispatch('project/fetch',{page:page});
   } ,
   methods:{
-    handleCurrentChange(current) {
-      if(current === this.page.number){
-        return ;
-      }
-      this.$store.dispatch('project/changePage', {
-        number: current
-      });
+    handleCurrentChange(current){
+      this.$router.push("/project/list/"+ current);
+      this.$store.dispatch('project/fetch',{page:current});
+    },
+    setting(index,row){
+//      const _this = this;
+//     this.$store.dispatch("project/detail",{
+//       id:row.project.id,
+//       $router:_this.$router
+//     })
     }
+  }
+  ,
+  filters :{
+    'build-format' :   buildFormat,
+      'version-format'  : versionFormat
   }
   }
 </script>

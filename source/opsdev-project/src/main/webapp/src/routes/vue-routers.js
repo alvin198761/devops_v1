@@ -2,8 +2,8 @@ import VueRouter from 'vue-router'
 import project from './project'
 
 const routes = [
-  {path: '/', redirect: '/project/list', name:'首页'},
-  {path: '/project', redirect: '/project/list'},
+  {path: '/', redirect: '/project/list/1', name:'首页'},
+  {path: '/project', redirect: '/project/list/1'},
   project
 ];
 

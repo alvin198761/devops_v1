@@ -15,7 +15,7 @@
     <aside>
       <el-menu :default-active="navPath" theme="dark"
                style="  position: fixed; left: 0px; top: 65px; bottom: 0px ;width: 180px;">
-        <router-link to="/project/list">
+        <router-link to="/project/list/1">
           <el-menu-item index="/project/list"><i class="el-icon-menu"></i>项目列表</el-menu-item>
         </router-link>
         <router-link to="/project/add">

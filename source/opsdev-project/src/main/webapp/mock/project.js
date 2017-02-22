@@ -1,7 +1,6 @@
 /**
  * Created by tangzhichao on 2017/1/9.
  */
-console.log('---------------------------')
 let Mock = require('mockjs');
 let moment = require('moment')
 
@@ -11,13 +10,21 @@ module.exports = {
     for (let i = 0; i < 20; i++) {
       list.push({
         attr: Mock.mock({
-          "id": i,
-          "icon": /\w{5,10}\-/,
-          "description": /\w{15,20}\-/
+          "id": 1,
+          "icon": "el-icon-menu",
+          "description": /\w{15,20}\-/,
+          "optUser": '@Name',
+          "optPassword": /\w{6,14}\-/,
+          "mail": false,
+          "mailUser": "alvin198761@163.com",
+          "projectStatus": "DEV"
         }),
         project: Mock.mock({
           "id": i,
           "name": /\w{5,10}\-/,
+          "buildType|1-3": 1,
+          "versionControl|1-2": 1,
+          "author": "@Name"
         })
       });
     }

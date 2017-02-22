@@ -8,13 +8,29 @@
             label="名称"
             :rules="[{ required: true, message: '请输入项目名称', trigger: 'blur' } ]"
           >
-            <el-input v-model="form.name"></el-input>
+            <el-input v-model="form.name" style="width: 300px"></el-input>
           </el-form-item>
           <el-form-item
-            label="描述"
-            prop="description"
-            :rules="[{ required: true, message: '描述不能为空', trigger: 'blur'   }]">
-            <el-input v-model="form.description"></el-input>
+            label="编译方式"
+            prop="buildType"            >
+            <el-select v-model="form.buildType" placeholder="请选择构建方式">
+              <el-option
+                v-for="item in _buildTypes"
+                :label="item.label"
+                :value="item.value">
+              </el-option>
+            </el-select>
+          </el-form-item>
+          <el-form-item
+            label="版本管理"
+            prop="versionControl" >
+            <el-select v-model="form.versionControl" placeholder="请选择版本管理">
+              <el-option
+                v-for="item in _versionControls"
+                :label="item.label"
+                :value="item.value">
+              </el-option>
+            </el-select>
           </el-form-item>
           <el-form-item>
             <el-button type="primary" @click="addProject('form')">提交</el-button>
@@ -27,12 +43,14 @@
 </template>
 <script>
   import {mapGetters} from 'vuex'
+  import {builds ,versionContrls} from '../../constant';
   export default {
     data: function () {
       return {
         form: {
           name: '',
-          description: ''
+          versionControl:1,
+          buildType:1
         }
       }
     },
@@ -54,8 +72,14 @@
     computed: {
       ...mapGetters({
         loading: 'project/_loading'
-      })
-  }
+      }),
+      _buildTypes:function () {
+        return builds;
+      },
+      _versionControls:function () {
+        return versionContrls;
+      }
+    }
   }
 </script>
 <style>

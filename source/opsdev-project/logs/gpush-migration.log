@@ -1,0 +1,821 @@
+2017-02-22 11:33:42 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.alvin.opsdev.project.service.test.ProjectServiceTest], using SpringBootContextLoader
+2017-02-22 11:33:42 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [org.alvin.opsdev.project.service.test.ProjectServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-02-22 11:33:42 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.alvin.opsdev.project.service.test.ProjectServiceTest]: ProjectServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2017-02-22 11:33:42 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.alvin.opsdev.project.Application for test class org.alvin.opsdev.project.service.test.ProjectServiceTest
+2017-02-22 11:33:42 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-02-22 11:33:42 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3745e5c6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5e4c8041, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@71c8becc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@19d37183, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1a0dcaa, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3bd40a57, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@fdefd3f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@d83da2e]
+2017-02-22 11:33:45 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - Starting ProjectServiceTest on SH-tangzc with PID 9400 (started by tangzhichao in D:\学习\devops_v1\source\opsdev-project)
+2017-02-22 11:33:45 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - No active profile set, falling back to default profiles: default
+2017-02-22 11:33:46 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19d481b: startup date [Wed Feb 22 11:33:46 CST 2017]; root of context hierarchy
+2017-02-22 11:34:12 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.alvin.opsdev.project.service.test.ProjectServiceTest], using SpringBootContextLoader
+2017-02-22 11:34:12 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [org.alvin.opsdev.project.service.test.ProjectServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-02-22 11:34:12 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.alvin.opsdev.project.service.test.ProjectServiceTest]: ProjectServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2017-02-22 11:34:12 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.alvin.opsdev.project.Application for test class org.alvin.opsdev.project.service.test.ProjectServiceTest
+2017-02-22 11:34:12 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-02-22 11:34:12 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1a0dcaa, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3bd40a57, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@fdefd3f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@d83da2e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@a4102b8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@11dc3715, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@69930714, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7a52f2a2]
+2017-02-22 11:34:12 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - Starting ProjectServiceTest on SH-tangzc with PID 2556 (started by tangzhichao in D:\学习\devops_v1\source\opsdev-project)
+2017-02-22 11:34:12 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - No active profile set, falling back to default profiles: default
+2017-02-22 11:34:12 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@26275bef: startup date [Wed Feb 22 11:34:12 CST 2017]; root of context hierarchy
+2017-02-22 11:34:15 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+2017-02-22 11:34:17 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 11:34:18 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 11:34:18 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a59e0480] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 11:34:22 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 0 (http)
+2017-02-22 11:34:22 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+2017-02-22 11:34:22 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-02-22 11:34:22 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-02-22 11:34:22 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 10187 ms
+2017-02-22 11:34:23 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-02-22 11:34:23 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'errorPageFilter' to: [/*]
+2017-02-22 11:34:23 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-02-22 11:34:23 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-02-22 11:34:23 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-02-22 11:34:23 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-02-22 11:34:27 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-02-22 11:34:27 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-02-22 11:34:28 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2017-02-22 11:34:28 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-02-22 11:34:28 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-02-22 11:34:28 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-02-22 11:34:29 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-02-22 11:34:31 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2017-02-22 11:34:32 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: pro_attr
+2017-02-22 11:34:32 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: pro_attr
+2017-02-22 11:34:35 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-02-22 11:34:37 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@26275bef: startup date [Wed Feb 22 11:34:12 CST 2017]; root of context hierarchy
+2017-02-22 11:34:37 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String org.alvin.opsdev.project.controller.IndexController.index()
+2017-02-22 11:34:37 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[GET]}" onto public org.springframework.data.domain.Page<org.alvin.opsdev.project.domain.Project> org.alvin.opsdev.project.controller.ProjectController.find(org.springframework.data.domain.Pageable)
+2017-02-22 11:34:37 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[GET]}" onto public org.alvin.opsdev.project.domain.Project org.alvin.opsdev.project.controller.ProjectController.find(java.lang.Long)
+2017-02-22 11:34:37 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[POST]}" onto public void org.alvin.opsdev.project.controller.ProjectController.save(org.alvin.opsdev.project.domain.Project)
+2017-02-22 11:34:37 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[DELETE]}" onto public void org.alvin.opsdev.project.controller.ProjectController.del(java.lang.Long)
+2017-02-22 11:34:37 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-02-22 11:34:37 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-02-22 11:34:37 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 11:34:37 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 11:34:37 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 11:34:38 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+2017-02-22 11:34:38 [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@26275bef: startup date [Wed Feb 22 11:34:12 CST 2017]; root of context hierarchy] and template loader path [classpath:/templates/]
+2017-02-22 11:34:38 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-02-22 11:34:38 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2017-02-22 11:34:38 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2017-02-22 11:34:38 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-auto-1]
+2017-02-22 11:34:38 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-02-22 11:34:38 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 54485 (http)
+2017-02-22 11:34:38 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - Started ProjectServiceTest in 26.289 seconds (JVM running for 27.006)
+2017-02-22 11:34:38 [main] WARN  o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7a52f2a2] to process 'before' execution of test method [public void org.alvin.opsdev.project.service.test.ProjectServiceTest.addProjectTest()] for test instance [org.alvin.opsdev.project.service.test.ProjectServiceTest@1b7554d4]
+java.lang.NoClassDefFoundError: org/mockito/internal/util/MockUtil
+	at org.springframework.boot.test.mock.mockito.MockReset.<clinit>(MockReset.java:56)
+	at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.beforeTestMethod(ResetMocksTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:269)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:119)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:42)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.lang.ClassNotFoundException: org.mockito.internal.util.MockUtil
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 28 common frames omitted
+2017-02-22 11:34:38 [main] WARN  o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7a52f2a2] to process 'after' execution for test: method [public void org.alvin.opsdev.project.service.test.ProjectServiceTest.addProjectTest()], instance [org.alvin.opsdev.project.service.test.ProjectServiceTest@1b7554d4], exception [java.lang.NoClassDefFoundError: org/mockito/internal/util/MockUtil]
+java.lang.NoClassDefFoundError: Could not initialize class org.springframework.boot.test.mock.mockito.MockReset
+	at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.afterTestMethod(ResetMocksTestExecutionListener.java:49)
+	at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:94)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:119)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:42)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+2017-02-22 11:34:38 [Thread-4] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@26275bef: startup date [Wed Feb 22 11:34:12 CST 2017]; root of context hierarchy
+2017-02-22 11:34:38 [Thread-4] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-02-22 11:40:25 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.alvin.opsdev.project.service.test.ProjectServiceTest], using SpringBootContextLoader
+2017-02-22 11:40:25 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [org.alvin.opsdev.project.service.test.ProjectServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-02-22 11:40:25 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-02-22 11:40:25 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6591f517, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@345965f2, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@429bd883, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4d49af10, org.springframework.test.context.transaction.TransactionalTestExecutionListener@279ad2e3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@58134517, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4450d156, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4461c7e3]
+2017-02-22 11:40:25 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - Starting ProjectServiceTest on SH-tangzc with PID 10496 (started by tangzhichao in D:\学习\devops_v1\source\opsdev-project)
+2017-02-22 11:40:25 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - No active profile set, falling back to default profiles: default
+2017-02-22 11:40:25 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@76ed1b7c: startup date [Wed Feb 22 11:40:25 CST 2017]; root of context hierarchy
+2017-02-22 11:40:26 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+2017-02-22 11:40:27 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 11:40:27 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 11:40:27 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4d5021d0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 11:40:28 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-02-22 11:40:28 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-02-22 11:40:28 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2017-02-22 11:40:28 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-02-22 11:40:28 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-02-22 11:40:28 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-02-22 11:40:28 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-02-22 11:40:28 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2017-02-22 11:40:28 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: pro_attr
+2017-02-22 11:40:28 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: pro_attr
+2017-02-22 11:40:29 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: project
+2017-02-22 11:40:29 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: project
+2017-02-22 11:40:29 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-02-22 11:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@76ed1b7c: startup date [Wed Feb 22 11:40:25 CST 2017]; root of context hierarchy
+2017-02-22 11:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String org.alvin.opsdev.project.controller.IndexController.index()
+2017-02-22 11:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[GET]}" onto public org.springframework.data.domain.Page<org.alvin.opsdev.project.domain.Project> org.alvin.opsdev.project.controller.ProjectController.find(org.springframework.data.domain.Pageable)
+2017-02-22 11:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[GET]}" onto public org.alvin.opsdev.project.domain.Project org.alvin.opsdev.project.controller.ProjectController.find(java.lang.Long)
+2017-02-22 11:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[POST]}" onto public void org.alvin.opsdev.project.controller.ProjectController.save(org.alvin.opsdev.project.domain.Project)
+2017-02-22 11:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[DELETE]}" onto public void org.alvin.opsdev.project.controller.ProjectController.del(java.lang.Long)
+2017-02-22 11:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-02-22 11:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-02-22 11:40:30 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 11:40:30 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 11:40:30 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 11:40:30 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+2017-02-22 11:40:30 [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@76ed1b7c: startup date [Wed Feb 22 11:40:25 CST 2017]; root of context hierarchy] and template loader path [classpath:/templates/]
+2017-02-22 11:40:30 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-02-22 11:40:30 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2017-02-22 11:40:30 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - Started ProjectServiceTest in 4.974 seconds (JVM running for 5.901)
+2017-02-22 11:40:30 [main] WARN  o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4450d156] to process 'before' execution of test method [public void org.alvin.opsdev.project.service.test.ProjectServiceTest.addProjectTest()] for test instance [org.alvin.opsdev.project.service.test.ProjectServiceTest@6486fe7b]
+java.lang.NoClassDefFoundError: org/mockito/internal/util/MockUtil
+	at org.springframework.boot.test.mock.mockito.MockReset.<clinit>(MockReset.java:56)
+	at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.beforeTestMethod(ResetMocksTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:269)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:119)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:42)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.lang.ClassNotFoundException: org.mockito.internal.util.MockUtil
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 28 common frames omitted
+2017-02-22 11:40:30 [main] WARN  o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4450d156] to process 'after' execution for test: method [public void org.alvin.opsdev.project.service.test.ProjectServiceTest.addProjectTest()], instance [org.alvin.opsdev.project.service.test.ProjectServiceTest@6486fe7b], exception [java.lang.NoClassDefFoundError: org/mockito/internal/util/MockUtil]
+java.lang.NoClassDefFoundError: Could not initialize class org.springframework.boot.test.mock.mockito.MockReset
+	at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.afterTestMethod(ResetMocksTestExecutionListener.java:49)
+	at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:94)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:119)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:42)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+2017-02-22 11:40:30 [Thread-3] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@76ed1b7c: startup date [Wed Feb 22 11:40:25 CST 2017]; root of context hierarchy
+2017-02-22 11:40:30 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-02-22 12:08:00 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.alvin.opsdev.project.service.test.ProjectServiceTest], using SpringBootContextLoader
+2017-02-22 12:08:00 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [org.alvin.opsdev.project.service.test.ProjectServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-02-22 12:08:00 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-02-22 12:08:00 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6591f517, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@345965f2, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@429bd883, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4d49af10, org.springframework.test.context.transaction.TransactionalTestExecutionListener@279ad2e3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@58134517, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4450d156, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4461c7e3]
+2017-02-22 12:08:00 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - Starting ProjectServiceTest on SH-tangzc with PID 5316 (started by tangzhichao in D:\学习\devops_v1\source\opsdev-project)
+2017-02-22 12:08:00 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - No active profile set, falling back to default profiles: default
+2017-02-22 12:08:00 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@76ed1b7c: startup date [Wed Feb 22 12:08:00 CST 2017]; root of context hierarchy
+2017-02-22 12:08:01 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+2017-02-22 12:08:02 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 12:08:02 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 12:08:02 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ac5e023e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 12:08:03 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-02-22 12:08:03 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-02-22 12:08:03 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2017-02-22 12:08:03 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-02-22 12:08:03 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-02-22 12:08:03 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-02-22 12:08:03 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-02-22 12:08:03 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2017-02-22 12:08:03 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-02-22 12:08:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@76ed1b7c: startup date [Wed Feb 22 12:08:00 CST 2017]; root of context hierarchy
+2017-02-22 12:08:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String org.alvin.opsdev.project.controller.IndexController.index()
+2017-02-22 12:08:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[GET]}" onto public org.springframework.data.domain.Page<org.alvin.opsdev.project.domain.Project> org.alvin.opsdev.project.controller.ProjectController.find(org.springframework.data.domain.Pageable)
+2017-02-22 12:08:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[GET]}" onto public org.alvin.opsdev.project.domain.Project org.alvin.opsdev.project.controller.ProjectController.find(java.lang.Long)
+2017-02-22 12:08:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[POST]}" onto public void org.alvin.opsdev.project.controller.ProjectController.save(org.alvin.opsdev.project.domain.Project)
+2017-02-22 12:08:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[DELETE]}" onto public void org.alvin.opsdev.project.controller.ProjectController.del(java.lang.Long)
+2017-02-22 12:08:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-02-22 12:08:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-02-22 12:08:04 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 12:08:04 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 12:08:04 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 12:08:04 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+2017-02-22 12:08:05 [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@76ed1b7c: startup date [Wed Feb 22 12:08:00 CST 2017]; root of context hierarchy] and template loader path [classpath:/templates/]
+2017-02-22 12:08:05 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-02-22 12:08:05 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2017-02-22 12:08:05 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - Started ProjectServiceTest in 4.766 seconds (JVM running for 5.499)
+2017-02-22 12:08:05 [main] WARN  o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4450d156] to process 'before' execution of test method [public void org.alvin.opsdev.project.service.test.ProjectServiceTest.addProjectTest()] for test instance [org.alvin.opsdev.project.service.test.ProjectServiceTest@69a5c6be]
+java.lang.NoClassDefFoundError: org/mockito/internal/util/MockUtil
+	at org.springframework.boot.test.mock.mockito.MockReset.<clinit>(MockReset.java:56)
+	at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.beforeTestMethod(ResetMocksTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:269)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:119)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:42)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.lang.ClassNotFoundException: org.mockito.internal.util.MockUtil
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 28 common frames omitted
+2017-02-22 12:08:05 [main] WARN  o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4450d156] to process 'after' execution for test: method [public void org.alvin.opsdev.project.service.test.ProjectServiceTest.addProjectTest()], instance [org.alvin.opsdev.project.service.test.ProjectServiceTest@69a5c6be], exception [java.lang.NoClassDefFoundError: org/mockito/internal/util/MockUtil]
+java.lang.NoClassDefFoundError: Could not initialize class org.springframework.boot.test.mock.mockito.MockReset
+	at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.afterTestMethod(ResetMocksTestExecutionListener.java:49)
+	at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:94)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:119)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:42)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+2017-02-22 12:08:05 [Thread-3] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@76ed1b7c: startup date [Wed Feb 22 12:08:00 CST 2017]; root of context hierarchy
+2017-02-22 12:08:05 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:26:24 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.alvin.opsdev.project.service.test.ProjectServiceTest], using SpringBootContextLoader
+2017-02-22 13:26:24 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [org.alvin.opsdev.project.service.test.ProjectServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-02-22 13:26:24 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-02-22 13:26:24 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@351d0846, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@77e4c80f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@35fc6dc4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7fe8ea47, org.springframework.test.context.transaction.TransactionalTestExecutionListener@226a82c4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@731f8236, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@255b53dc, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1dd92fe2]
+2017-02-22 13:26:24 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - Starting ProjectServiceTest on SH-tangzc with PID 10792 (started by tangzhichao in D:\学习\devops_v1\source\opsdev-project)
+2017-02-22 13:26:24 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - No active profile set, falling back to default profiles: default
+2017-02-22 13:26:24 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3f56875e: startup date [Wed Feb 22 13:26:24 CST 2017]; root of context hierarchy
+2017-02-22 13:26:25 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+2017-02-22 13:26:26 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:26:26 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:26:26 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$71ecd00c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:26:27 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:26:27 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-02-22 13:26:27 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2017-02-22 13:26:27 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-02-22 13:26:27 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-02-22 13:26:27 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-02-22 13:26:27 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-02-22 13:26:27 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2017-02-22 13:26:27 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:26:28 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3f56875e: startup date [Wed Feb 22 13:26:24 CST 2017]; root of context hierarchy
+2017-02-22 13:26:28 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String org.alvin.opsdev.project.controller.IndexController.index()
+2017-02-22 13:26:28 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[GET]}" onto public org.springframework.data.domain.Page<org.alvin.opsdev.project.domain.Project> org.alvin.opsdev.project.controller.ProjectController.find(org.springframework.data.domain.Pageable)
+2017-02-22 13:26:28 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[GET]}" onto public org.alvin.opsdev.project.domain.Project org.alvin.opsdev.project.controller.ProjectController.find(java.lang.Long)
+2017-02-22 13:26:28 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[POST]}" onto public void org.alvin.opsdev.project.controller.ProjectController.save(org.alvin.opsdev.project.domain.Project)
+2017-02-22 13:26:28 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[DELETE]}" onto public void org.alvin.opsdev.project.controller.ProjectController.del(java.lang.Long)
+2017-02-22 13:26:28 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-02-22 13:26:28 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-02-22 13:26:28 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:26:28 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:26:28 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:26:28 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+2017-02-22 13:26:28 [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@3f56875e: startup date [Wed Feb 22 13:26:24 CST 2017]; root of context hierarchy] and template loader path [classpath:/templates/]
+2017-02-22 13:26:28 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-02-22 13:26:29 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2017-02-22 13:26:29 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - Started ProjectServiceTest in 4.677 seconds (JVM running for 5.458)
+2017-02-22 13:26:29 [main] WARN  o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@255b53dc] to process 'before' execution of test method [public void org.alvin.opsdev.project.service.test.ProjectServiceTest.addProjectTest()] for test instance [org.alvin.opsdev.project.service.test.ProjectServiceTest@6ad6443]
+java.lang.NoClassDefFoundError: org/mockito/internal/util/MockUtil
+	at org.springframework.boot.test.mock.mockito.MockReset.<clinit>(MockReset.java:56)
+	at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.beforeTestMethod(ResetMocksTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:269)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:119)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:42)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: java.lang.ClassNotFoundException: org.mockito.internal.util.MockUtil
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 28 common frames omitted
+2017-02-22 13:26:29 [main] WARN  o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@255b53dc] to process 'after' execution for test: method [public void org.alvin.opsdev.project.service.test.ProjectServiceTest.addProjectTest()], instance [org.alvin.opsdev.project.service.test.ProjectServiceTest@6ad6443], exception [java.lang.NoClassDefFoundError: org/mockito/internal/util/MockUtil]
+java.lang.NoClassDefFoundError: Could not initialize class org.springframework.boot.test.mock.mockito.MockReset
+	at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.afterTestMethod(ResetMocksTestExecutionListener.java:49)
+	at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:94)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:119)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:42)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+2017-02-22 13:26:29 [Thread-3] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@3f56875e: startup date [Wed Feb 22 13:26:24 CST 2017]; root of context hierarchy
+2017-02-22 13:26:29 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:27:52 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [org.alvin.opsdev.project.service.test.ProjectServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-02-22 13:27:52 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-02-22 13:27:52 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4686afc2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1e0b4072, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@791f145a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@38cee291, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4b45a2f5, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@f09733f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@e350b40, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@41a0aa7d]
+2017-02-22 13:27:53 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - Starting ProjectServiceTest on SH-tangzc with PID 7736 (started by tangzhichao in D:\学习\devops_v1\source\opsdev-project)
+2017-02-22 13:27:53 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - No active profile set, falling back to default profiles: default
+2017-02-22 13:27:53 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@294a6b8e: startup date [Wed Feb 22 13:27:53 CST 2017]; root of context hierarchy
+2017-02-22 13:27:54 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+2017-02-22 13:27:54 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:27:54 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:27:54 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$58229d36] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:27:55 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:27:55 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-02-22 13:27:55 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2017-02-22 13:27:55 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-02-22 13:27:55 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-02-22 13:27:55 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-02-22 13:27:55 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-02-22 13:27:56 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2017-02-22 13:27:56 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:27:57 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@294a6b8e: startup date [Wed Feb 22 13:27:53 CST 2017]; root of context hierarchy
+2017-02-22 13:27:57 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String org.alvin.opsdev.project.controller.IndexController.index()
+2017-02-22 13:27:57 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[GET]}" onto public org.springframework.data.domain.Page<org.alvin.opsdev.project.domain.Project> org.alvin.opsdev.project.controller.ProjectController.find(org.springframework.data.domain.Pageable)
+2017-02-22 13:27:57 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[GET]}" onto public org.alvin.opsdev.project.domain.Project org.alvin.opsdev.project.controller.ProjectController.find(java.lang.Long)
+2017-02-22 13:27:57 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[POST]}" onto public void org.alvin.opsdev.project.controller.ProjectController.save(org.alvin.opsdev.project.domain.Project)
+2017-02-22 13:27:57 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[DELETE]}" onto public void org.alvin.opsdev.project.controller.ProjectController.del(java.lang.Long)
+2017-02-22 13:27:57 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-02-22 13:27:57 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-02-22 13:27:57 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:27:57 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:27:57 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:27:57 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+2017-02-22 13:27:57 [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@294a6b8e: startup date [Wed Feb 22 13:27:53 CST 2017]; root of context hierarchy] and template loader path [classpath:/templates/]
+2017-02-22 13:27:57 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-02-22 13:27:57 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2017-02-22 13:27:58 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - Started ProjectServiceTest in 5.052 seconds (JVM running for 6.245)
+2017-02-22 13:27:58 [main] WARN  o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@41a0aa7d] to process 'before' execution of test method [public void org.alvin.opsdev.project.service.test.ProjectServiceTest.addProjectTest()] for test instance [org.alvin.opsdev.project.service.test.ProjectServiceTest@51f4439e]
+java.lang.NoClassDefFoundError: org/mockito/internal/util/MockUtil
+	at org.springframework.boot.test.mock.mockito.MockReset.<clinit>(MockReset.java:56)
+	at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.beforeTestMethod(ResetMocksTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:269)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:119)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:42)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74)
+Caused by: java.lang.ClassNotFoundException: org.mockito.internal.util.MockUtil
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 common frames omitted
+2017-02-22 13:27:58 [main] WARN  o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@41a0aa7d] to process 'after' execution for test: method [public void org.alvin.opsdev.project.service.test.ProjectServiceTest.addProjectTest()], instance [org.alvin.opsdev.project.service.test.ProjectServiceTest@51f4439e], exception [java.lang.NoClassDefFoundError: org/mockito/internal/util/MockUtil]
+java.lang.NoClassDefFoundError: Could not initialize class org.springframework.boot.test.mock.mockito.MockReset
+	at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.afterTestMethod(ResetMocksTestExecutionListener.java:49)
+	at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:94)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:119)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:42)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74)
+2017-02-22 13:27:58 [Thread-3] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@294a6b8e: startup date [Wed Feb 22 13:27:53 CST 2017]; root of context hierarchy
+2017-02-22 13:27:58 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:31:20 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [org.alvin.opsdev.project.service.test.ProjectServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-02-22 13:31:20 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-02-22 13:31:20 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4d154ccd, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@229c6181, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4686afc2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1e0b4072, org.springframework.test.context.transaction.TransactionalTestExecutionListener@791f145a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@38cee291, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4b45a2f5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@f09733f]
+2017-02-22 13:31:20 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - Starting ProjectServiceTest on SH-tangzc with PID 9908 (started by tangzhichao in D:\学习\devops_v1\source\opsdev-project)
+2017-02-22 13:31:20 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - No active profile set, falling back to default profiles: default
+2017-02-22 13:31:20 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5b1ebf56: startup date [Wed Feb 22 13:31:20 CST 2017]; root of context hierarchy
+2017-02-22 13:31:21 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+2017-02-22 13:31:22 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:31:22 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:31:22 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4bf2c9ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:31:23 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:31:23 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-02-22 13:31:23 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2017-02-22 13:31:23 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-02-22 13:31:23 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-02-22 13:31:23 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-02-22 13:31:23 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-02-22 13:31:24 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2017-02-22 13:31:24 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:31:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5b1ebf56: startup date [Wed Feb 22 13:31:20 CST 2017]; root of context hierarchy
+2017-02-22 13:31:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String org.alvin.opsdev.project.controller.IndexController.index()
+2017-02-22 13:31:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[GET]}" onto public org.springframework.data.domain.Page<org.alvin.opsdev.project.domain.Project> org.alvin.opsdev.project.controller.ProjectController.find(org.springframework.data.domain.Pageable)
+2017-02-22 13:31:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[GET]}" onto public org.alvin.opsdev.project.domain.Project org.alvin.opsdev.project.controller.ProjectController.find(java.lang.Long)
+2017-02-22 13:31:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[POST]}" onto public void org.alvin.opsdev.project.controller.ProjectController.save(org.alvin.opsdev.project.domain.Project)
+2017-02-22 13:31:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[DELETE]}" onto public void org.alvin.opsdev.project.controller.ProjectController.del(java.lang.Long)
+2017-02-22 13:31:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-02-22 13:31:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-02-22 13:31:25 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:31:25 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:31:25 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:31:25 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+2017-02-22 13:31:25 [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@5b1ebf56: startup date [Wed Feb 22 13:31:20 CST 2017]; root of context hierarchy] and template loader path [classpath:/templates/]
+2017-02-22 13:31:25 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-02-22 13:31:25 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2017-02-22 13:31:26 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - Started ProjectServiceTest in 5.77 seconds (JVM running for 6.6)
+2017-02-22 13:31:27 [Thread-3] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@5b1ebf56: startup date [Wed Feb 22 13:31:20 CST 2017]; root of context hierarchy
+2017-02-22 13:31:27 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:36:02 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.alvin.opsdev.project.service.test.ProjectServiceTest], using SpringBootContextLoader
+2017-02-22 13:36:02 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [org.alvin.opsdev.project.service.test.ProjectServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-02-22 13:36:02 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-02-22 13:36:02 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@226a82c4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@731f8236, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@255b53dc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1dd92fe2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6b53e23f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@64d2d351, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1b68b9a4, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4f9a3314]
+2017-02-22 13:36:03 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - Starting ProjectServiceTest on SH-tangzc with PID 10592 (started by tangzhichao in D:\学习\devops_v1\source\opsdev-project)
+2017-02-22 13:36:03 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - No active profile set, falling back to default profiles: default
+2017-02-22 13:36:03 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3e96bacf: startup date [Wed Feb 22 13:36:03 CST 2017]; root of context hierarchy
+2017-02-22 13:36:03 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+2017-02-22 13:36:04 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:36:05 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:36:05 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$51b3ea3d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:36:05 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:36:05 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-02-22 13:36:05 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2017-02-22 13:36:05 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-02-22 13:36:05 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-02-22 13:36:05 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-02-22 13:36:05 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-02-22 13:36:06 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2017-02-22 13:36:06 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:36:07 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3e96bacf: startup date [Wed Feb 22 13:36:03 CST 2017]; root of context hierarchy
+2017-02-22 13:36:07 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String org.alvin.opsdev.project.controller.IndexController.index()
+2017-02-22 13:36:07 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[GET]}" onto public org.springframework.data.domain.Page<org.alvin.opsdev.project.domain.Project> org.alvin.opsdev.project.controller.ProjectController.find(org.springframework.data.domain.Pageable)
+2017-02-22 13:36:07 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[GET]}" onto public org.alvin.opsdev.project.domain.Project org.alvin.opsdev.project.controller.ProjectController.find(java.lang.Long)
+2017-02-22 13:36:07 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[POST]}" onto public void org.alvin.opsdev.project.controller.ProjectController.save(org.alvin.opsdev.project.domain.Project)
+2017-02-22 13:36:07 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[DELETE]}" onto public void org.alvin.opsdev.project.controller.ProjectController.del(java.lang.Long)
+2017-02-22 13:36:07 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-02-22 13:36:07 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-02-22 13:36:07 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:36:07 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:36:07 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:36:07 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+2017-02-22 13:36:07 [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@3e96bacf: startup date [Wed Feb 22 13:36:03 CST 2017]; root of context hierarchy] and template loader path [classpath:/templates/]
+2017-02-22 13:36:07 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-02-22 13:36:07 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2017-02-22 13:36:07 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - Started ProjectServiceTest in 4.704 seconds (JVM running for 5.442)
+2017-02-22 13:36:07 [Thread-3] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@3e96bacf: startup date [Wed Feb 22 13:36:03 CST 2017]; root of context hierarchy
+2017-02-22 13:36:07 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:37:56 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.alvin.opsdev.project.service.test.ProjectServiceTest], using SpringBootContextLoader
+2017-02-22 13:37:56 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [org.alvin.opsdev.project.service.test.ProjectServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-02-22 13:37:56 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-02-22 13:37:56 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@255b53dc, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1dd92fe2, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6b53e23f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@64d2d351, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1b68b9a4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4f9a3314, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3b2c72c2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@491666ad]
+2017-02-22 13:37:57 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - Starting ProjectServiceTest on SH-tangzc with PID 7904 (started by tangzhichao in D:\学习\devops_v1\source\opsdev-project)
+2017-02-22 13:37:57 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - No active profile set, falling back to default profiles: default
+2017-02-22 13:37:57 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4470f8a6: startup date [Wed Feb 22 13:37:57 CST 2017]; root of context hierarchy
+2017-02-22 13:37:57 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+2017-02-22 13:37:58 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:37:58 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:37:58 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5b1ee4d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:37:59 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:37:59 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-02-22 13:37:59 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2017-02-22 13:37:59 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-02-22 13:37:59 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-02-22 13:37:59 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-02-22 13:37:59 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-02-22 13:37:59 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2017-02-22 13:37:59 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:38:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4470f8a6: startup date [Wed Feb 22 13:37:57 CST 2017]; root of context hierarchy
+2017-02-22 13:38:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String org.alvin.opsdev.project.controller.IndexController.index()
+2017-02-22 13:38:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[GET]}" onto public org.springframework.data.domain.Page<org.alvin.opsdev.project.domain.Project> org.alvin.opsdev.project.controller.ProjectController.find(org.springframework.data.domain.Pageable)
+2017-02-22 13:38:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[GET]}" onto public org.alvin.opsdev.project.domain.Project org.alvin.opsdev.project.controller.ProjectController.find(java.lang.Long)
+2017-02-22 13:38:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[POST]}" onto public void org.alvin.opsdev.project.controller.ProjectController.save(org.alvin.opsdev.project.domain.Project)
+2017-02-22 13:38:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[DELETE]}" onto public void org.alvin.opsdev.project.controller.ProjectController.del(java.lang.Long)
+2017-02-22 13:38:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-02-22 13:38:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-02-22 13:38:00 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:38:00 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:38:00 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:38:00 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+2017-02-22 13:38:01 [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@4470f8a6: startup date [Wed Feb 22 13:37:57 CST 2017]; root of context hierarchy] and template loader path [classpath:/templates/]
+2017-02-22 13:38:01 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-02-22 13:38:01 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2017-02-22 13:38:01 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - Started ProjectServiceTest in 4.568 seconds (JVM running for 5.304)
+2017-02-22 13:38:01 [Thread-3] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@4470f8a6: startup date [Wed Feb 22 13:37:57 CST 2017]; root of context hierarchy
+2017-02-22 13:38:01 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:55:42 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.alvin.opsdev.project.service.test.ProjectServiceTest], using SpringBootContextLoader
+2017-02-22 13:55:42 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [org.alvin.opsdev.project.service.test.ProjectServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-02-22 13:55:42 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-02-22 13:55:42 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@255b53dc, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1dd92fe2, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6b53e23f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@64d2d351, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1b68b9a4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4f9a3314, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3b2c72c2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@491666ad]
+2017-02-22 13:55:43 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - Starting ProjectServiceTest on SH-tangzc with PID 8236 (started by tangzhichao in D:\学习\devops_v1\source\opsdev-project)
+2017-02-22 13:55:43 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - No active profile set, falling back to default profiles: default
+2017-02-22 13:55:43 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4470f8a6: startup date [Wed Feb 22 13:55:43 CST 2017]; root of context hierarchy
+2017-02-22 13:55:43 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+2017-02-22 13:55:44 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:55:44 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:55:44 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$42a62c85] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:55:45 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:55:45 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-02-22 13:55:45 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2017-02-22 13:55:45 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-02-22 13:55:45 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-02-22 13:55:45 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-02-22 13:55:45 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-02-22 13:55:46 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2017-02-22 13:55:46 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:55:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4470f8a6: startup date [Wed Feb 22 13:55:43 CST 2017]; root of context hierarchy
+2017-02-22 13:55:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String org.alvin.opsdev.project.controller.IndexController.index()
+2017-02-22 13:55:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[GET]}" onto public org.springframework.data.domain.Page<org.alvin.opsdev.project.domain.Project> org.alvin.opsdev.project.controller.ProjectController.find(org.springframework.data.domain.Pageable)
+2017-02-22 13:55:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[GET]}" onto public org.alvin.opsdev.project.domain.Project org.alvin.opsdev.project.controller.ProjectController.find(java.lang.Long)
+2017-02-22 13:55:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[POST]}" onto public void org.alvin.opsdev.project.controller.ProjectController.save(org.alvin.opsdev.project.domain.Project)
+2017-02-22 13:55:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[DELETE]}" onto public void org.alvin.opsdev.project.controller.ProjectController.del(java.lang.Long)
+2017-02-22 13:55:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-02-22 13:55:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-02-22 13:55:47 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:55:47 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:55:47 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:55:47 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+2017-02-22 13:55:47 [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@4470f8a6: startup date [Wed Feb 22 13:55:43 CST 2017]; root of context hierarchy] and template loader path [classpath:/templates/]
+2017-02-22 13:55:47 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-02-22 13:55:47 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2017-02-22 13:55:47 [main] INFO  o.a.o.p.s.test.ProjectServiceTest - Started ProjectServiceTest in 4.609 seconds (JVM running for 5.39)
+2017-02-22 13:55:47 [Thread-3] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@4470f8a6: startup date [Wed Feb 22 13:55:43 CST 2017]; root of context hierarchy
+2017-02-22 13:55:47 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:56:00 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.alvin.opsdev.project.service.test.AttrServiceTest], using SpringBootContextLoader
+2017-02-22 13:56:00 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [org.alvin.opsdev.project.service.test.AttrServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-02-22 13:56:00 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-02-22 13:56:00 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1dd92fe2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6b53e23f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@64d2d351, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1b68b9a4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4f9a3314, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3b2c72c2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@491666ad, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@176d53b2]
+2017-02-22 13:56:01 [main] INFO  o.a.o.p.service.test.AttrServiceTest - Starting AttrServiceTest on SH-tangzc with PID 11000 (started by tangzhichao in D:\学习\devops_v1\source\opsdev-project)
+2017-02-22 13:56:01 [main] INFO  o.a.o.p.service.test.AttrServiceTest - No active profile set, falling back to default profiles: default
+2017-02-22 13:56:01 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c83dc97: startup date [Wed Feb 22 13:56:01 CST 2017]; root of context hierarchy
+2017-02-22 13:56:01 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+2017-02-22 13:56:02 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:56:02 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:56:02 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cdd8c2b1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:56:03 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:56:03 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-02-22 13:56:03 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2017-02-22 13:56:03 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-02-22 13:56:03 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-02-22 13:56:03 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-02-22 13:56:03 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-02-22 13:56:04 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2017-02-22 13:56:04 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:56:05 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c83dc97: startup date [Wed Feb 22 13:56:01 CST 2017]; root of context hierarchy
+2017-02-22 13:56:05 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String org.alvin.opsdev.project.controller.IndexController.index()
+2017-02-22 13:56:05 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[GET]}" onto public org.springframework.data.domain.Page<org.alvin.opsdev.project.domain.Project> org.alvin.opsdev.project.controller.ProjectController.find(org.springframework.data.domain.Pageable)
+2017-02-22 13:56:05 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[GET]}" onto public org.alvin.opsdev.project.domain.Project org.alvin.opsdev.project.controller.ProjectController.find(java.lang.Long)
+2017-02-22 13:56:05 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[POST]}" onto public void org.alvin.opsdev.project.controller.ProjectController.save(org.alvin.opsdev.project.domain.Project)
+2017-02-22 13:56:05 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[DELETE]}" onto public void org.alvin.opsdev.project.controller.ProjectController.del(java.lang.Long)
+2017-02-22 13:56:05 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-02-22 13:56:05 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-02-22 13:56:05 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:56:05 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:56:05 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:56:05 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+2017-02-22 13:56:05 [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@7c83dc97: startup date [Wed Feb 22 13:56:01 CST 2017]; root of context hierarchy] and template loader path [classpath:/templates/]
+2017-02-22 13:56:05 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-02-22 13:56:05 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2017-02-22 13:56:05 [main] INFO  o.a.o.p.service.test.AttrServiceTest - Started AttrServiceTest in 4.835 seconds (JVM running for 5.575)
+2017-02-22 13:56:05 [Thread-3] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@7c83dc97: startup date [Wed Feb 22 13:56:01 CST 2017]; root of context hierarchy
+2017-02-22 13:56:05 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:56:28 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.alvin.opsdev.project.service.test.AttrServiceTest], using SpringBootContextLoader
+2017-02-22 13:56:28 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [org.alvin.opsdev.project.service.test.AttrServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-02-22 13:56:28 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-02-22 13:56:28 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1dd92fe2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6b53e23f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@64d2d351, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1b68b9a4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4f9a3314, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3b2c72c2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@491666ad, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@176d53b2]
+2017-02-22 13:56:28 [main] INFO  o.a.o.p.service.test.AttrServiceTest - Starting AttrServiceTest on SH-tangzc with PID 9284 (started by tangzhichao in D:\学习\devops_v1\source\opsdev-project)
+2017-02-22 13:56:28 [main] INFO  o.a.o.p.service.test.AttrServiceTest - No active profile set, falling back to default profiles: default
+2017-02-22 13:56:28 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c83dc97: startup date [Wed Feb 22 13:56:28 CST 2017]; root of context hierarchy
+2017-02-22 13:56:29 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+2017-02-22 13:56:30 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:56:30 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:56:30 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cdd8c2b1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:56:30 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:56:30 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-02-22 13:56:30 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2017-02-22 13:56:30 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-02-22 13:56:30 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-02-22 13:56:31 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-02-22 13:56:31 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-02-22 13:56:31 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2017-02-22 13:56:31 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:56:32 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c83dc97: startup date [Wed Feb 22 13:56:28 CST 2017]; root of context hierarchy
+2017-02-22 13:56:32 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String org.alvin.opsdev.project.controller.IndexController.index()
+2017-02-22 13:56:32 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[GET]}" onto public org.springframework.data.domain.Page<org.alvin.opsdev.project.domain.Project> org.alvin.opsdev.project.controller.ProjectController.find(org.springframework.data.domain.Pageable)
+2017-02-22 13:56:32 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[GET]}" onto public org.alvin.opsdev.project.domain.Project org.alvin.opsdev.project.controller.ProjectController.find(java.lang.Long)
+2017-02-22 13:56:32 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[POST]}" onto public void org.alvin.opsdev.project.controller.ProjectController.save(org.alvin.opsdev.project.domain.Project)
+2017-02-22 13:56:32 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[DELETE]}" onto public void org.alvin.opsdev.project.controller.ProjectController.del(java.lang.Long)
+2017-02-22 13:56:32 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-02-22 13:56:32 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-02-22 13:56:32 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:56:32 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:56:32 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:56:32 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+2017-02-22 13:56:32 [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@7c83dc97: startup date [Wed Feb 22 13:56:28 CST 2017]; root of context hierarchy] and template loader path [classpath:/templates/]
+2017-02-22 13:56:32 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-02-22 13:56:32 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2017-02-22 13:56:32 [main] INFO  o.a.o.p.service.test.AttrServiceTest - Started AttrServiceTest in 4.702 seconds (JVM running for 5.434)
+2017-02-22 13:56:33 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2017-02-22 13:56:33 [Thread-3] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@7c83dc97: startup date [Wed Feb 22 13:56:28 CST 2017]; root of context hierarchy
+2017-02-22 13:56:33 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:56:42 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.alvin.opsdev.project.service.test.AttrServiceTest], using SpringBootContextLoader
+2017-02-22 13:56:42 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [org.alvin.opsdev.project.service.test.AttrServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-02-22 13:56:42 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-02-22 13:56:42 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1dd92fe2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6b53e23f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@64d2d351, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1b68b9a4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4f9a3314, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3b2c72c2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@491666ad, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@176d53b2]
+2017-02-22 13:56:43 [main] INFO  o.a.o.p.service.test.AttrServiceTest - Starting AttrServiceTest on SH-tangzc with PID 10996 (started by tangzhichao in D:\学习\devops_v1\source\opsdev-project)
+2017-02-22 13:56:43 [main] INFO  o.a.o.p.service.test.AttrServiceTest - No active profile set, falling back to default profiles: default
+2017-02-22 13:56:43 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c83dc97: startup date [Wed Feb 22 13:56:43 CST 2017]; root of context hierarchy
+2017-02-22 13:56:43 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+2017-02-22 13:56:44 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:56:44 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:56:44 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5a80b961] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-22 13:56:45 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:56:45 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-02-22 13:56:45 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2017-02-22 13:56:45 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-02-22 13:56:45 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-02-22 13:56:45 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-02-22 13:56:45 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-02-22 13:56:46 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2017-02-22 13:56:46 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-02-22 13:56:46 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c83dc97: startup date [Wed Feb 22 13:56:43 CST 2017]; root of context hierarchy
+2017-02-22 13:56:46 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String org.alvin.opsdev.project.controller.IndexController.index()
+2017-02-22 13:56:46 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[GET]}" onto public org.springframework.data.domain.Page<org.alvin.opsdev.project.domain.Project> org.alvin.opsdev.project.controller.ProjectController.find(org.springframework.data.domain.Pageable)
+2017-02-22 13:56:46 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[GET]}" onto public org.alvin.opsdev.project.domain.Project org.alvin.opsdev.project.controller.ProjectController.find(java.lang.Long)
+2017-02-22 13:56:46 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project],methods=[POST]}" onto public void org.alvin.opsdev.project.controller.ProjectController.save(org.alvin.opsdev.project.domain.Project)
+2017-02-22 13:56:46 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/project/{id}],methods=[DELETE]}" onto public void org.alvin.opsdev.project.controller.ProjectController.del(java.lang.Long)
+2017-02-22 13:56:46 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-02-22 13:56:46 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-02-22 13:56:47 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:56:47 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:56:47 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-22 13:56:47 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+2017-02-22 13:56:47 [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@7c83dc97: startup date [Wed Feb 22 13:56:43 CST 2017]; root of context hierarchy] and template loader path [classpath:/templates/]
+2017-02-22 13:56:47 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-02-22 13:56:47 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2017-02-22 13:56:47 [main] INFO  o.a.o.p.service.test.AttrServiceTest - Started AttrServiceTest in 4.845 seconds (JVM running for 5.603)
+2017-02-22 13:56:47 [Thread-3] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@7c83dc97: startup date [Wed Feb 22 13:56:43 CST 2017]; root of context hierarchy
+2017-02-22 13:56:47 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'

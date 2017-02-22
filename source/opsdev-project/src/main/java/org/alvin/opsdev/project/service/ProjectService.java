@@ -8,6 +8,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * Created by tangzhichao on 2017/2/15.
  */
@@ -24,6 +26,10 @@ public class ProjectService {
 
     public Page<Project> findAll(Pageable pageable) {
         return this.projectRepository.findAll(pageable);
+    }
+
+    public List<Project> findAll() {
+        return this.projectRepository.findAll();
     }
 
     @Transactional
