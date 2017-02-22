@@ -7,4 +7,4 @@
 状态：只是搭好了框架，还没有开始做
 
 前端图片：
-![image](https://github.com/alvin198761/alvin_swing/blob/master/jinshan/demo.png)
+![image](https://github.com/alvin198761/devops_v1/blob/master/source/opsdev-project/pic/main.png)
