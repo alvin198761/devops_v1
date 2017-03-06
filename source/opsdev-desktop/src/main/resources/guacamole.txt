@@ -1,0 +1,16 @@
+browser -- > guacamole server --> |-->rdp 
+				  |-->vnc
+				  |-->other
+
+
+server
+client
+auth-noauth
+
+--------------------------
+1.安装guacamole 服务端（centos/ubuntu）
+
+2.下载客户端 ：https://github.com/glyptodon/guacamole-client
+3.编译项目：mvn install 复制 jar all.js
+
+-- 未完待续
