@@ -22,3 +22,5 @@
 6.访问： http://yourip:4005
 
 样例图片：
+![image](https://github.com/alvin198761/devops_v1/blob/master/source/opsdev-desktop/pics/111.png?raw=true)
+![image](https://github.com/alvin198761/devops_v1/blob/master/source/opsdev-desktop/pics/222.png?raw=true)
