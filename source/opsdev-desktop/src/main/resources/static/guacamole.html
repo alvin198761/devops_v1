@@ -12,11 +12,22 @@
 <script src="guacamole/guacamole-all.min.js"></script>
 <!-- Init -->
 <script type="text/javascript"> /* <![CDATA[ */
+
+var url = location.href;
+var paraString = url.substring(url.indexOf("?") + 1, url.length).split("&");
+var paraObj = {};
+var i, j;
+for (i = 0; j = paraString[i]; i++) {
+  paraObj[j.substring(0, j.indexOf("=")).toLowerCase()] = j.substring(j.indexOf("=") + 1, j.length);
+}
+var id = decodeURI(paraObj['id']);
+var type = decodeURI(paraObj['type']);
+console.log(id, type)
 // Get display div from document
 var display = document.getElementById("display");
 // Instantiate client, using an HTTP tunnel for communications.
 var guac = new Guacamole.Client(
-  new Guacamole.HTTPTunnel("tunnel")
+  new Guacamole.HTTPTunnel("/api/tunnel")
 );
 // Add client to display div
 display.appendChild(guac.getDisplay().getElement());
@@ -26,7 +37,8 @@ guac.onerror = function (error) {
   alert(error);
 };
 // Connect
-guac.connect();
+
+guac.connect("id=" + id + "&type=" + type + "&width=" + (window.innerWidth - 20) + "&height=" + (window.innerHeight - 20));
 // Disconnect on close
 window.onunload = function () {
   guac.disconnect();

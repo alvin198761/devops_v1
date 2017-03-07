@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
  * Created by tangzhichao on 2017/3/6.
  */
 @Configuration
-@ServletComponentScan(basePackages = {"org.alvin.opsdev.desktop.servlet"})
+@ServletComponentScan
 public class ServletConfiguration extends SpringBootServletInitializer {
 
     @Override

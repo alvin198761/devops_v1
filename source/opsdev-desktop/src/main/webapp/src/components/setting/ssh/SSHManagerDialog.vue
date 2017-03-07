@@ -55,7 +55,8 @@
         var app = {
           id: 'ssh01',
           title: '远程ssh',
-          url: '/guacamole',
+          url: '/guacamole.html?id=' + row.id + "&type=ssh",
+          icon: require('../../../assets/icon/sidebar/putty.png')
         }
         this.$store.dispatch('taskbar/addBrowser', app);
       },

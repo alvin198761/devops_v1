@@ -60,7 +60,13 @@
         this.$store.commit('taskbar/removeTask', this.userObject)
       },
       handleConnect: function (index, row) {
-
+        var app = {
+          id: 'vnc01',
+          title: '远程 vnc',
+          url: '/guacamole.html?id=' + row.id + "&type=vnc",
+          icon: require('../../../assets/icon/sidebar/vnc.png')
+        }
+        this.$store.dispatch('taskbar/addBrowser', app);
       }
     },
     components: {

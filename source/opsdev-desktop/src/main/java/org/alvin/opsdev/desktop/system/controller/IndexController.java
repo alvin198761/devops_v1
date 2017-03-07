@@ -13,9 +13,5 @@ public class IndexController {
     public String index() {
         return "index";
     }
-
-    @RequestMapping("/guacamole")
-    public String tunnel() {
-        return "guacamole";
-    }
+ 
 }

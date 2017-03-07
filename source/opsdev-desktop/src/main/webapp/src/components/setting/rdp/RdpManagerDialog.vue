@@ -71,8 +71,14 @@
         this.$store.commit('taskbar/removeTask', this.userObject)
       },
       handleConnect: function (index, row) {
-
-
+        console.log(row)
+        var app = {
+          id: 'rdp01',
+          title: '远程 rdp',
+          url: '/guacamole.html?id=' + row.id + "&type=rdp",
+          icon: require('../../../assets/icon/sidebar/rdp.png')
+        }
+        this.$store.dispatch('taskbar/addBrowser', app);
       }
     },
     components: {
