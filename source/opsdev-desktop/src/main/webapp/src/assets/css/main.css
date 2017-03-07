@@ -1044,11 +1044,8 @@ a#startingChangeEvn {
 
 .app-grid {
   display: block;
-  position: fixed;
-  left: 100px;
-  right: 90px;
-  top: 0px;
-  bottom: 0px;
+  margin-left: 50px;
+  margin-right: auto;
 }
 
 .app-grid ul li,

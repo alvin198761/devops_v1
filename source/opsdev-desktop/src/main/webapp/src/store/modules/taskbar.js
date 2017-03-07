@@ -6,6 +6,7 @@ import Browser from '../../components/commons/Browser.vue';
 import RdpManagerDialog from '../../components/setting/rdp/RdpManagerDialog.vue';
 import SSHManagerDialog from '../../components/setting/ssh/SSHManagerDialog.vue';
 import VncManagerDialog from '../../components/setting/vnc/VncManagerDialog.vue';
+import {componentIndexOf} from '../../constant';
 export default {
   state: {
     el: null,
@@ -54,7 +55,7 @@ export default {
   actions: {
     ['taskbar/addAppDialog']({rootState, commit, dispatch}, payload){
       let id = 'dialog_' + payload.id + '_box';
-      if (rootState.taskbar.tasks.indexOf(payload) === -1) {
+      if (componentIndexOf(rootState.taskbar.tasks, id) === -1) {
         commit('desktop/addComponent', {
           component: AppDialog,
           options: {},
@@ -70,7 +71,7 @@ export default {
     },
     ['taskbar/addBrowser']({rootState, commit, dispatch}, payload){
       let id = 'browser_' + payload.id + '_box'
-      if (rootState.taskbar.tasks.indexOf(payload) === -1) {
+      if (componentIndexOf(rootState.taskbar.tasks, id) === -1) {
         commit('desktop/addComponent', {
           component: Browser,
           options: {},

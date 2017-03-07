@@ -6,6 +6,15 @@ export const APP_TYPE = {
   DIR:2
 }
 
+export function componentIndexOf(tasks, id) {
+  for (let i = 0; i < tasks.length; i++) {
+    if (tasks[i].el_id === id) {
+      return i;
+    }
+  }
+  return -1;
+}
+
 export const BuildType = {
   ANT: 1,
   MAVEN: 2,
