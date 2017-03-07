@@ -1,5 +1,5 @@
 <template>
-  <div style="width: 740px; height: 500px; top: 100px; left: 288px; z-index: 3;" class="window-container window-current"
+  <div style="width: 740px; height: 500px; " class="window-container window-current"
        :id="id">
     <div style="height: 100%;">
       <div @dblclick="haDblClick" class="title-bar" @mousedown="haMouseDown">{{title}}
@@ -82,11 +82,14 @@
       let obj = $("#" + this.id);
       obj.find('.window-container').removeClass('window-current');
       obj.addClass('window-current').css({
-        'z-index': this.$store.state.browser.zIndex
+        'z-index': this.$store.state.browser.zIndex + 1,
+        position: 'absolute',
+        top: '100px',
+        left: '288px'
       });
       this.$store.commit('browser/zIndexAdd');
       obj.draggable({containment: "#desktop"});
-      if(this.resize){
+      if (this.resize) {
         obj.resizable();
       }
     },
@@ -114,15 +117,13 @@
           left: obj[0].offsetLeft
         }
         obj.css({
-          width: "100%",
-          height: "100%",
+          width: window.innerWidth,
+          height: window.innerHeight,
           top: 0,
-          left: 0
+          left: 0,
+          position: 'absolute'
         });
         obj.find(".ha-max").hide().next(".ha-revert").show();
-        Notification.info({
-          message: '按F11体验浏览器全屏模式！'
-        });
       },
       // 还原
       haRevert: function (e) {

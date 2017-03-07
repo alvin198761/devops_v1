@@ -8,8 +8,8 @@
       <div id="taskNextBox" class="taskNextBox" _olddisplay="" style="display: none;"><a id="taskNext" class="taskNext"
                                                                                          hidefocus="true" href="#"></a>
       </div>
-      <div id="taskContainer" class="taskContainer" style="width: 476px;">
-        <div id="taskContainerInner" class="taskContainerInner" style="margin-right: 0px; width: 476px;">
+      <div id="taskContainer" class="taskContainer" style="margin-left: 100px;width: 90%;">
+        <div id="taskContainerInner" class="taskContainerInner" style="margin-right: 0px; width: 90%;">
           <div v-for="t in tasks" @click="activeTask(t)" class="taskGroup taskGroupAnaWidth"
                :class="'#'+t.el_id === currentBrowserId ? 'taskCurrent':''"
                :id="'taskGroup_'+t.el_id">
@@ -42,15 +42,15 @@
         tasks: 'taskbar/_tasks',
         currentBrowserId: 'browser/currentBrowserId'
       })
-    },
-    mounted: function () {
-      this.$store.commit('taskbar/initComponent')
-    },
-    methods: {
-      activeTask: function (t) {
-        this.$store.dispatch('taskbar/activeTask', t.el_id)
-      }
+  },
+  mounted: function () {
+    this.$store.commit('taskbar/initComponent')
+  },
+  methods: {
+    activeTask: function (t) {
+      this.$store.dispatch('taskbar/activeTask', t.el_id)
     }
+  }
   }
 </script>
 <style>
