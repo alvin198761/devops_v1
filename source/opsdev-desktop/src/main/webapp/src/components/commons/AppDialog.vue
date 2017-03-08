@@ -1,16 +1,15 @@
 <template>
   <Explorer :id="_dialogId" :title="userObject.title" :resize="false" :min="true" :max="false" :revert="false"
             :handleClose="handleClose">
-    <div slot="content">
-      <div v-loading="loading" element-loading-text="正在加载...">
-        <template v-if="apps.length === 0">
-          没有子应用列表
-        </template>
-        <div class="app-grid" style="position: inherit; padding-top: 15px; padding-left: 15px" v-else>
-          <ul>
-            <AppButton v-for="app in apps" :app="app" :openApp="openApp" style="float: left; margin-right: 50px"></AppButton>
-          </ul>
-        </div>
+    <div slot="content" class="loading-box" v-loading="loading" element-loading-text="正在加载...">
+      <template v-if="apps.length === 0">
+        没有子应用列表
+      </template>
+      <div class="app-grid" style="padding-top: 15px; padding-left: 15px" v-else>
+        <ul>
+          <AppButton v-for="app in apps" :app="app" :openApp="openApp"
+                     style="float: left; margin-right: 50px"></AppButton>
+        </ul>
       </div>
     </div>
   </Explorer>
@@ -60,7 +59,7 @@
         })
         this.$store.commit('taskbar/removeTask', this.userObject)
       },
-      openApp:function () {
+      openApp: function () {
         console.log('open sub app')
       }
     },
