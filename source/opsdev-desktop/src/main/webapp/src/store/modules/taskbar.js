@@ -96,6 +96,10 @@ export default {
           options: {},
           userObject: payload
         })
+        commit('taskbar/addTask', {
+          id: 'rdp',
+          task: payload
+        })
         return;
       }
       dispatch('taskbar/activeTask', payload.url)
@@ -107,6 +111,10 @@ export default {
           options: {},
           userObject: payload
         })
+        commit('taskbar/addTask', {
+          id: 'ssh',
+          task: payload
+        })
         return;
       }
       dispatch('taskbar/activeTask', payload.url)
@@ -117,6 +125,10 @@ export default {
           component: VncManagerDialog,
           options: {},
           userObject: payload
+        })
+        commit('taskbar/addTask', {
+          id: 'vnc',
+          task: payload
         })
         return;
       }

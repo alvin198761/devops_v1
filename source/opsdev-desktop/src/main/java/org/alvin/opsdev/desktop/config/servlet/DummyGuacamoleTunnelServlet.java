@@ -21,7 +21,7 @@
 // *
 // * @author Michael Jumper
 // */
-//@WebServlet(urlPatterns = "/tunnel.do")
+////@WebServlet(urlPatterns = "/tunnel.do")
 //public class DummyGuacamoleTunnelServlet extends GuacamoleHTTPTunnelServlet {
 //
 //    @Value("${guacamole.server.ip}")

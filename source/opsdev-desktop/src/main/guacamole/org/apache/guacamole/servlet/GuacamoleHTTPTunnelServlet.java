@@ -1,4 +1,23 @@
-package org.alvin.opsdev.desktop.system.controller;
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+package org.apache.guacamole.servlet;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -6,14 +25,10 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.Reader;
 import java.io.Writer;
-import javax.annotation.PreDestroy;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.alvin.opsdev.desktop.system.domain.Protocol;
-import org.alvin.opsdev.desktop.system.service.SettingService;
 import org.apache.guacamole.GuacamoleClientException;
 import org.apache.guacamole.GuacamoleConnectionClosedException;
 import org.apache.guacamole.GuacamoleException;
@@ -21,41 +36,23 @@ import org.apache.guacamole.GuacamoleResourceNotFoundException;
 import org.apache.guacamole.GuacamoleServerException;
 import org.apache.guacamole.io.GuacamoleReader;
 import org.apache.guacamole.io.GuacamoleWriter;
-import org.apache.guacamole.net.GuacamoleSocket;
 import org.apache.guacamole.net.GuacamoleTunnel;
-import org.apache.guacamole.net.InetGuacamoleSocket;
-import org.apache.guacamole.net.SimpleGuacamoleTunnel;
-import org.apache.guacamole.protocol.ConfiguredGuacamoleSocket;
-import org.apache.guacamole.protocol.GuacamoleConfiguration;
 import org.apache.guacamole.protocol.GuacamoleStatus;
-import org.apache.guacamole.servlet.GuacamoleHTTPTunnelMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.util.Assert;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by tangzhichao on 2017/3/7.
+ * A HttpServlet implementing and abstracting the operations required by the
+ * HTTP implementation of the JavaScript Guacamole client's tunnel.
+ *
+ * @author Michael Jumper
  */
-@RestController
-public class GuacamoleController {
-
-    @Value("${guacamole.server.ip}")
-    private String guacamoleServer;
-    @Value("${guacamole.server.port}")
-    private int guacamoleServerPort;
-
-    @Autowired
-    private SettingService settingService;
-
+public abstract class GuacamoleHTTPTunnelServlet extends HttpServlet {
 
     /**
      * Logger for this class.
      */
-    private final Logger logger = LoggerFactory.getLogger(GuacamoleController.class);
+    private final Logger logger = LoggerFactory.getLogger(GuacamoleHTTPTunnelServlet.class);
 
     /**
      * Map of absolutely all active tunnels using HTTP, indexed by tunnel UUID.
@@ -65,7 +62,7 @@ public class GuacamoleController {
     /**
      * The prefix of the query string which denotes a tunnel read operation.
      */
-    private static final String READ_PREFIX = "read:";
+    private static final String READ_PREFIX  = "read:";
 
     /**
      * The prefix of the query string which denotes a tunnel write operation.
@@ -91,7 +88,8 @@ public class GuacamoleController {
      * Registers the given tunnel such that future read/write requests to that
      * tunnel will be properly directed.
      *
-     * @param tunnel The tunnel to register.
+     * @param tunnel
+     *     The tunnel to register.
      */
     protected void registerTunnel(GuacamoleTunnel tunnel) {
         tunnels.put(tunnel.getUUID().toString(), tunnel);
@@ -102,7 +100,8 @@ public class GuacamoleController {
      * Deregisters the given tunnel such that future read/write requests to
      * that tunnel will be rejected.
      *
-     * @param tunnel The tunnel to deregister.
+     * @param tunnel
+     *     The tunnel to deregister.
      */
     protected void deregisterTunnel(GuacamoleTunnel tunnel) {
         tunnels.remove(tunnel.getUUID().toString());
@@ -113,10 +112,15 @@ public class GuacamoleController {
      * Returns the tunnel with the given UUID, if it has been registered with
      * registerTunnel() and not yet deregistered with deregisterTunnel().
      *
-     * @param tunnelUUID The UUID of registered tunnel.
-     * @return The tunnel corresponding to the given UUID.
-     * @throws GuacamoleException If the requested tunnel does not exist because it has not yet been
-     *                            registered or it has been deregistered.
+     * @param tunnelUUID
+     *     The UUID of registered tunnel.
+     *
+     * @return
+     *     The tunnel corresponding to the given UUID.
+     *
+     * @throws GuacamoleException
+     *     If the requested tunnel does not exist because it has not yet been
+     *     registered or it has been deregistered.
      */
     protected GuacamoleTunnel getTunnel(String tunnelUUID)
             throws GuacamoleException {
@@ -130,10 +134,13 @@ public class GuacamoleController {
 
     }
 
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException {
+        handleTunnelRequest(request, response);
+    }
 
-    @RequestMapping("/api/tunnel")
-    public void doConnect(HttpServletRequest request, HttpServletResponse response)
-            throws GuacamoleException, ServletException {
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException {
         handleTunnelRequest(request, response);
     }
 
@@ -141,13 +148,20 @@ public class GuacamoleController {
      * Sends an error on the given HTTP response using the information within
      * the given GuacamoleStatus.
      *
-     * @param response   The HTTP response to use to send the error.
-     * @param guacStatus The status to send
-     * @param message    A human-readable message that can be presented to the user.
-     * @throws ServletException If an error prevents sending of the error code.
+     * @param response
+     *     The HTTP response to use to send the error.
+     *
+     * @param guacStatus
+     *     The status to send
+     *
+     * @param message
+     *     A human-readable message that can be presented to the user.
+     *
+     * @throws ServletException
+     *     If an error prevents sending of the error code.
      */
     protected void sendError(HttpServletResponse response,
-                             GuacamoleStatus guacStatus, String message)
+            GuacamoleStatus guacStatus, String message)
             throws ServletException {
 
         try {
@@ -159,7 +173,8 @@ public class GuacamoleController {
                 response.sendError(guacStatus.getHttpStatusCode());
             }
 
-        } catch (IOException ioe) {
+        }
+        catch (IOException ioe) {
 
             // If unable to send error at all due to I/O problems,
             // rethrow as servlet exception
@@ -173,14 +188,19 @@ public class GuacamoleController {
      * Dispatches every HTTP GET and POST request to the appropriate handler
      * function based on the query string.
      *
-     * @param request  The HttpServletRequest associated with the GET or POST request
-     *                 received.
-     * @param response The HttpServletResponse associated with the GET or POST request
-     *                 received.
-     * @throws ServletException If an error occurs while servicing the request.
+     * @param request
+     *     The HttpServletRequest associated with the GET or POST request
+     *     received.
+     *
+     * @param response
+     *     The HttpServletResponse associated with the GET or POST request
+     *     received.
+     *
+     * @throws ServletException
+     *     If an error occurs while servicing the request.
      */
     protected void handleTunnelRequest(HttpServletRequest request,
-                                       HttpServletResponse response) throws ServletException {
+            HttpServletResponse response) throws ServletException {
 
         try {
 
@@ -204,7 +224,8 @@ public class GuacamoleController {
 
                         // Send UUID to client
                         response.getWriter().print(tunnel.getUUID().toString());
-                    } catch (IOException e) {
+                    }
+                    catch (IOException e) {
                         throw new GuacamoleServerException(e);
                     }
 
@@ -218,19 +239,19 @@ public class GuacamoleController {
 
             // If read operation, call doRead() with tunnel UUID, ignoring any
             // characters following the tunnel UUID.
-            else if (query.startsWith(READ_PREFIX))
+            else if(query.startsWith(READ_PREFIX))
                 doRead(request, response, query.substring(
                         READ_PREFIX_LENGTH,
                         READ_PREFIX_LENGTH + UUID_LENGTH));
 
-                // If write operation, call doWrite() with tunnel UUID, ignoring any
-                // characters following the tunnel UUID.
-            else if (query.startsWith(WRITE_PREFIX))
+            // If write operation, call doWrite() with tunnel UUID, ignoring any
+            // characters following the tunnel UUID.
+            else if(query.startsWith(WRITE_PREFIX))
                 doWrite(request, response, query.substring(
                         WRITE_PREFIX_LENGTH,
                         WRITE_PREFIX_LENGTH + UUID_LENGTH));
 
-                // Otherwise, invalid operation
+            // Otherwise, invalid operation
             else
                 throw new GuacamoleClientException("Invalid tunnel operation: " + query);
         }
@@ -240,7 +261,8 @@ public class GuacamoleController {
         catch (GuacamoleClientException e) {
             logger.warn("HTTP tunnel request rejected: {}", e.getMessage());
             sendError(response, e.getStatus(), e.getMessage());
-        } catch (GuacamoleException e) {
+        }
+        catch (GuacamoleException e) {
             logger.error("HTTP tunnel request failed: {}", e.getMessage());
             logger.debug("Internal error in HTTP tunnel.", e);
             sendError(response, e.getStatus(), "Internal server error.");
@@ -255,47 +277,44 @@ public class GuacamoleController {
      * as a result of this connection request (whether some sort of credentials
      * must be specified, for example).
      *
-     * @param request The HttpServletRequest associated with the connection request
-     *                received. Any parameters specified along with the connection request
-     *                can be read from this object.
-     * @return A newly constructed GuacamoleTunnel if successful, null otherwise.
-     * @throws GuacamoleException If an error occurs while constructing the GuacamoleTunnel, or if the
-     *                            conditions required for connection are not met.
+     * @param request
+     *     The HttpServletRequest associated with the connection request
+     *     received. Any parameters specified along with the connection request
+     *     can be read from this object.
+     *
+     * @return
+     *     A newly constructed GuacamoleTunnel if successful, null otherwise.
+     *
+     * @throws GuacamoleException
+     *     If an error occurs while constructing the GuacamoleTunnel, or if the
+     *     conditions required for connection are not met.
      */
-    protected GuacamoleTunnel doConnect(HttpServletRequest request)
-            throws GuacamoleException {
-        String id = request.getParameter("id");
-        Protocol protocol = this.settingService.getRDP(Long.parseLong(id));
-        Assert.notNull(protocol, "protocol must not be null");
-        GuacamoleConfiguration config = new GuacamoleConfiguration();
-        config.setProtocol(request.getParameter("type"));
-        config.setParameter("hostname", protocol.getIp());
-        config.setParameter("port", protocol.getPort().toString());
-        config.setParameter("username", protocol.getUser());
-        config.setParameter("password", protocol.getPassword());
-        config.setParameter("width", request.getParameter("width"));
-        config.setParameter("height", request.getParameter("height"));
-        GuacamoleSocket socket = new ConfiguredGuacamoleSocket(
-                new InetGuacamoleSocket(this.guacamoleServer, this.guacamoleServerPort), config);
-        return new SimpleGuacamoleTunnel(socket);
-    }
+    protected abstract GuacamoleTunnel doConnect(HttpServletRequest request)
+            throws GuacamoleException;
 
     /**
      * Called whenever the JavaScript Guacamole client makes a read request.
      * This function should in general not be overridden, as it already
      * contains a proper implementation of the read operation.
      *
-     * @param request    The HttpServletRequest associated with the read request received.
-     * @param response   The HttpServletResponse associated with the write request received.
-     *                   Any data to be sent to the client in response to the write request
-     *                   should be written to the response body of this HttpServletResponse.
-     * @param tunnelUUID The UUID of the tunnel to read from, as specified in the write
-     *                   request. This tunnel must have been created by a previous call to
-     *                   doConnect().
-     * @throws GuacamoleException If an error occurs while handling the read request.
+     * @param request
+     *     The HttpServletRequest associated with the read request received.
+     *
+     * @param response
+     *     The HttpServletResponse associated with the write request received.
+     *     Any data to be sent to the client in response to the write request
+     *     should be written to the response body of this HttpServletResponse.
+     *
+     * @param tunnelUUID
+     *     The UUID of the tunnel to read from, as specified in the write
+     *     request. This tunnel must have been created by a previous call to
+     *     doConnect().
+     *
+     * @throws GuacamoleException
+     *     If an error occurs while handling the read request.
      */
     protected void doRead(HttpServletRequest request,
-                          HttpServletResponse response, String tunnelUUID)
+            HttpServletResponse response, String tunnelUUID)
             throws GuacamoleException {
 
         // Get tunnel, ensure tunnel exists
@@ -371,7 +390,9 @@ public class GuacamoleController {
                 out.flush();
                 response.flushBuffer();
 
-            } catch (GuacamoleException e) {
+            }
+
+            catch (GuacamoleException e) {
 
                 // Deregister and close
                 deregisterTunnel(tunnel);
@@ -385,7 +406,8 @@ public class GuacamoleController {
                 out.close();
             }
 
-        } catch (IOException e) {
+        }
+        catch (IOException e) {
 
             // Log typically frequent I/O error if desired
             logger.debug("Error writing to servlet output stream", e);
@@ -394,7 +416,8 @@ public class GuacamoleController {
             deregisterTunnel(tunnel);
             tunnel.close();
 
-        } finally {
+        }
+        finally {
             tunnel.releaseReader();
         }
 
@@ -405,17 +428,24 @@ public class GuacamoleController {
      * This function should in general not be overridden, as it already
      * contains a proper implementation of the write operation.
      *
-     * @param request    The HttpServletRequest associated with the write request received.
-     *                   Any data to be written will be specified within the body of this
-     *                   request.
-     * @param response   The HttpServletResponse associated with the write request received.
-     * @param tunnelUUID The UUID of the tunnel to write to, as specified in the write
-     *                   request. This tunnel must have been created by a previous call to
-     *                   doConnect().
-     * @throws GuacamoleException If an error occurs while handling the write request.
+     * @param request
+     *     The HttpServletRequest associated with the write request received.
+     *     Any data to be written will be specified within the body of this
+     *     request.
+     *
+     * @param response
+     *     The HttpServletResponse associated with the write request received.
+     *
+     * @param tunnelUUID
+     *     The UUID of the tunnel to write to, as specified in the write
+     *     request. This tunnel must have been created by a previous call to
+     *     doConnect().
+     *
+     * @throws GuacamoleException
+     *     If an error occurs while handling the write request.
      */
     protected void doWrite(HttpServletRequest request,
-                           HttpServletResponse response, String tunnelUUID)
+            HttpServletResponse response, String tunnelUUID)
             throws GuacamoleException {
 
         GuacamoleTunnel tunnel = getTunnel(tunnelUUID);
@@ -458,23 +488,36 @@ public class GuacamoleController {
                 input.close();
             }
 
-        } catch (GuacamoleConnectionClosedException e) {
+        }
+        catch (GuacamoleConnectionClosedException e) {
             logger.debug("Connection to guacd closed.", e);
-        } catch (IOException e) {
+        }
+        catch (IOException e) {
 
             // Deregister and close
             deregisterTunnel(tunnel);
             tunnel.close();
 
             throw new GuacamoleServerException("I/O Error sending data to server: " + e.getMessage(), e);
-        } finally {
+        }
+        finally {
             tunnel.releaseWriter();
         }
 
     }
 
-    @PreDestroy
+    @Override
     public void destroy() {
         tunnels.shutdown();
     }
+
 }
+
+/**
+ * \example ExampleTunnelServlet.java
+ *
+ * A basic example demonstrating extending GuacamoleTunnelServlet and
+ * implementing doConnect() to configure the Guacamole connection as
+ * desired.
+ */
+
