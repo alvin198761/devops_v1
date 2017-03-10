@@ -5,3 +5,5 @@
  -前端： react + redux + antd + reqwest
 
  效果图：
+ 
+ ![image]( https://github.com/alvin198761/devops_v1/blob/master/source/opsdev-cmdb/demo.png)
