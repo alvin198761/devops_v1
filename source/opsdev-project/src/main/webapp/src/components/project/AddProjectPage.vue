@@ -36,10 +36,10 @@
             <el-button type="primary" @click="addProject('form')">提交</el-button>
             <el-button @click="cancel('form')">返回列表</el-button>
           </el-form-item>
-        </el-form>
+        </el-form> </div>
     </el-col>
   </el-row>
-  </div>
+
 </template>
 <script>
   import {mapGetters} from 'vuex'
